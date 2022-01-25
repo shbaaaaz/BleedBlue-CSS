@@ -1,0 +1,140 @@
+@import url(_card.css);
+@import url(_generalStyle.css);
+@import url(_list.css);
+@import url(_chips.css);
+@import url(_drawer.css);
+@import url(_colors.css);
+@import url(_navbar.css);
+@import url(_alert.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+:root{
+    --bbPrimaryColor: #00539CFF;
+    --bbFontFamily: 'Nunito', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: var(--bbFontFamily);
+    font-size: 100%;
+    letter-spacing:.0135em;
+}
+
+
+.mainnav {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color:var(--bbPrimaryColor);
+    padding: 1rem 5rem;
+    color: white;
+    
+}
+
+.icon-color{
+    cursor: pointer;
+    color:rgb(105, 105, 105);
+}
+
+
+
+/************************************************* badge component ***************************************************/
+
+.badge-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bb--badge-component{
+    position: relative;
+}
+
+.bb--badge--left--top{
+    font-size: 0.6rem;
+    font-weight: bold;
+    color:azure;
+    background-color: rgb(243, 112, 133);
+    padding: 0.2rem 0.37rem;
+    border-radius:50%;
+    position:absolute;
+    left:-9px;
+    top: -10px;
+}
+
+.bb--badge--right--top{
+    font-size: 0.6rem;
+    font-weight: bold;
+    color:azure;
+    background-color: rgb(243, 112, 133);
+    padding: 0.2rem 0.37rem;
+    border-radius:50%;
+    position:absolute;
+    left:16px;
+    top: -10px;
+
+}
+
+.bb--badge--right--bottom{
+    font-size: 0.6rem;
+    font-weight: bold;
+    color:azure;
+    background-color: rgb(243, 112, 133);
+    padding: 0.2rem 0.37rem;
+    border-radius:50%;
+    position:absolute;
+    left:22px;
+    top: 15px;
+
+}
+
+.bb--badge--left--bottom{
+    font-size: 0.6rem;
+    font-weight: bold;
+    color:azure;
+    background-color: rgb(243, 112, 133);
+    padding: 0.2rem 0.37rem;
+    border-radius:50%;
+    position:absolute;
+    left:-5px;
+    top: 15px;
+
+}
+
+/************************************************************************************/
+
+.snackbar{
+    width: 400px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px rgb(109, 109, 109);
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, 500%);
+}
+
+.bb--tab--selected{
+    background-color:rgb(243, 112, 133);
+    color:white;
+    border-radius:40px;
+}
+
+.parent-position{
+    position:relative;
+}
+
+.card-overlap{
+    position:absolute;
+    top: 10%;
+    left: 10%;
+}

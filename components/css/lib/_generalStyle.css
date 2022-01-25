@@ -1,0 +1,382 @@
+.clickable{
+    cursor:pointer;
+}
+
+.list-inline {
+    display: inline;
+}
+
+/**************************** Vertical Margin**************************************/
+
+.gutter-vh-xs {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.gutter-vh-sm {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gutter-vh-md {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.gutter-vh-lg {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gutter-vh-xl {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.gutter-vh-xxl {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.gutter-vh-xxl {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/*********************************************** Horizontal Margin **********************************************/
+
+
+.gutter-hz-xs {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.gutter-hz-sm {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.gutter-hz-md {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.gutter-hz-lg {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.gutter-hz-xl {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.gutter-hz-xxl {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.gutter-hz-xxxl {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+
+
+
+
+/**************************** Vertical Padding**************************************/
+
+.padder-vh-xs {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.padder-vh-sm {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.padder-vh-md {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.padder-vh-lg {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.padder-vh-xl {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.padder-vh-xxl {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.padder-vh-xxxl {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/*********************************************** Horizontal Margin **********************************************/
+
+
+.padder-hz-xs {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.padder-hz-sm {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.padder-hz-md {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.padder-hz-lg {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.padder-hz-xl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.padder-hz-xxl {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.padder-hz-xxxl {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/********************************* gap ******************************************/
+.gap-xs {
+    gap: 0.5rem;
+}
+
+.gap-sm{
+    gap:1rem;
+}
+
+.gap-md{
+    gap:1.5rem;
+}
+.gap-lg{
+    gap:2rem;
+}
+
+.gap-xl{
+    gap: 3rem;
+}
+
+.gap-xxl{
+    gap:4rem;
+}
+.gap-xxxl{
+    gap:5rem;
+}
+/************************************************** border sizes ****************************************************/
+
+.border-xt{
+    border: 1px solid;
+}
+
+.border-th {
+    border: 2px solid;
+}
+
+.border-rg{
+    border: 3px solid;
+}
+
+.border-ft {
+    border: 4px solid;
+}
+
+.border-xf{
+    border: 5px solid;
+}
+
+.border-xxf{
+    border: 6px solid;
+}
+
+/******************************* border top *******************************/
+.border-xt-top{
+    border-top: 1px solid;
+}
+
+.border-th-top {
+    border-top: 2px solid;
+}
+
+.border-rg-top{
+    border-top: 3px solid;
+}
+
+.border-ft-top {
+    border-top: 4px solid;
+}
+
+.border-xf-top{
+    border-top: 5px solid;
+}
+
+.border-xxf-top{
+    border-top: 6px solid;
+}
+
+/******************************* border right *******************************/
+.border-xt-right{
+    border-right: 1px solid;
+}
+
+.border-th-right {
+    border-right: 2px solid;
+}
+
+.border-rg-right{
+    border-right: 3px solid;
+}
+
+.border-ft-right {
+    border-right: 4px solid;
+}
+
+.border-xf-right{
+    border-right: 5px solid;
+}
+
+.border-xxf-right{
+    border-right: 6px solid;
+}
+
+
+/******************************* border bottom *******************************/
+.border-xt-bottom{
+    border-bottom: 1px solid;
+}
+
+.border-th-bottom {
+    border-bottom: 2px solid;
+}
+
+.border-rg-bottom{
+    border-bottom: 3px solid;
+}
+
+.border-ft-bottom {
+    border-bottom: 4px solid;
+}
+
+.border-xf-bottom{
+    border-bottom: 5px solid;
+}
+
+.border-xxf-bottom{
+    border-bottom: 6px solid;
+}
+
+
+
+
+/******************************* border left *******************************/
+
+.border-xt-left{
+    border-left: 1px solid;
+}
+
+.border-th-left {
+    border-left: 2px solid;
+}
+
+.border-rg-left{
+    border-left: 3px solid;
+}
+
+.border-ft-left {
+    border-left: 4px solid;
+}
+
+.border-xf-left{
+    border-left: 5px solid;
+}
+
+.border-xxf-left{
+    border-left: 6px solid;
+}
+
+
+.border-circular {
+    border-radius: 50%;
+}
+
+.border-pill {
+    border-radius: 40px;
+}
+
+/****************************************** box shadow **********************************************/
+.shadow-xs{
+    box-shadow: 1px 1px 1px 1px var(--bb-shadow-color);
+}
+
+.shadow-sm{
+    box-shadow: 1px 1px 1px 2px var(--bb-shadow-color);
+}
+
+.shadow-md{
+    box-shadow: 1px 1px 1px 3px var(--bb-shadow-color);
+}
+
+.shadow-lg{
+    box-shadow: 1px 1px 1px 4px var(--bb-shadow-color);
+}
+
+
+.shadow-xl{
+    box-shadow: 1px 1px 1px 5px var(--bb-shadow-color);
+}
+
+
+/*******************************************Flex ************************************************/
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2{
+    flex-grow: 2;
+}
+
+.flex-grow-3{
+    flex-grow: 3;
+}
+
+/************************************** fixed positioning *******************************/
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    left:0;
+}

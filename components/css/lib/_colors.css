@@ -1,0 +1,179 @@
+/*************************** text colors ************************/
+
+.primary-text {
+    color: var(--bb-primary-color);
+}
+
+.secondary-text {
+    color: var(--bb-secondary-color);
+}
+
+.dark-text{
+    color: var(--bb-dark-color);
+}
+
+.inactive-text{
+    color: var(--bb-inactive-color);
+}
+
+.light-text {
+    color: var(--bb-light-color);
+}
+
+.danger-text{
+    color: var(--bb-danger-color);
+}
+
+.success-text{
+    color: var(--bb-success-color);
+}
+
+/****************************** Background colors *******************************/
+
+.primary-bg {
+    background-color: var(--bb-primary-color);
+}
+
+.secondary-bg {
+    background-color: var(--bb-secondary-color);
+}
+
+.dark-bg{
+    background-color: var(--bb-dark-color);
+}
+
+.inactive-bg{
+    background-color: var(--bb-inactive-color);
+}
+
+.light-bg {
+    background-color: var(--bb-light-color);
+}
+
+.danger-bg {
+    background-color: var(--bb-danger-color);
+}
+
+.success-bg {
+    background-color: var(--bb-success-color);
+}
+
+
+
+/*********************** border colors **************************/
+
+.primary-border {
+    border-color: var(--bb-primary-color);
+}
+
+.secondary-border {
+    border-color: var(--bb-secondary-color);
+}
+
+.dark-border{
+    border-color: var(--bb-dark-color);
+}
+
+.inactive-border{
+    border-color: var(--bb-inactive-color);
+}
+
+.light-border {
+    border-color: var(--bb-light-color);
+}
+
+.danger-border {
+    border-color: var(--bb-danger-color);
+}
+
+.success-border {
+    border-color: var(--bb-success-color);
+}
+
+
+/****************** Additional Colors *****************/
+
+
+
+
+/*************************** text colors ************************/
+
+.orange-text {
+    color: orange;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.red-text {
+    color: red;
+}
+.black-text {
+    color: black;
+}
+.green-text{
+    color: green;
+}
+.yellow-text {
+    color: yellow;
+}
+.pink-text {
+    color: pink;
+}
+.brown-text {
+    color: brown;
+}
+.purple-text {
+    color: purple;
+}
+.gray-text {
+    color: gray;
+}
+
+.darkgray-text{
+    color: rgb(88, 86, 86);
+}
+
+
+
+
+/****************************** Background colors *******************************/
+
+.orange-bg {
+    background-color: orange;
+}
+
+.blue-bg {
+    background-color: blue;
+}
+
+.red-bg {
+    background-color: red;
+}
+.black-bg {
+    background-color: black;
+}
+.green-bg{
+    background-color: green;
+}
+.yellow-bg {
+    background-color: yellow;
+}
+.pink-bg {
+    background-color: pink;
+}
+.brown-bg {
+    background-color: brown;
+}
+.purple-bg {
+    background-color: purple;
+}
+.gray-bg {
+    background-color: gray;
+}
+
+.darkgray-bg{
+    background-color: rgb(88, 86, 86);
+}
+

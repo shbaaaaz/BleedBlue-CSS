@@ -1,0 +1,9 @@
+.list-reset{
+    list-style: none;
+    padding-inline-start:0;
+}
+
+.link-reset{
+    text-decoration: none;
+}
+
