@@ -1,3 +1,7 @@
+.container{
+    padding: 1rem 2rem;
+}
+
 .clickable{
     cursor:pointer;
 }
@@ -327,27 +331,14 @@
 }
 
 /****************************************** box shadow **********************************************/
-.shadow-xs{
-    box-shadow: 1px 1px 1px 1px var(--bb-shadow-color);
+.shadow-dark{
+    box-shadow: 0 3px 15px 0 var(--bb-shadow-color-dark);
 }
 
-.shadow-sm{
-    box-shadow: 1px 1px 1px 2px var(--bb-shadow-color);
+.shadow-light {
+    box-shadow: 0 3px 15px 0 var(--bb-shadow-color-light);
+
 }
-
-.shadow-md{
-    box-shadow: 1px 1px 1px 3px var(--bb-shadow-color);
-}
-
-.shadow-lg{
-    box-shadow: 1px 1px 1px 4px var(--bb-shadow-color);
-}
-
-
-.shadow-xl{
-    box-shadow: 1px 1px 1px 5px var(--bb-shadow-color);
-}
-
 
 /*******************************************Flex ************************************************/
 

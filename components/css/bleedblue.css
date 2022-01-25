@@ -15,15 +15,17 @@
     --bb-dark-color: #393734;
     --bb-inactive-color: #a6a6a6;
     --bb-light-color: #ffffff;
-    --bb-shadow-color:#EBEBEB;
     --bb-danger-color: #ff5757;
     --bb-success-color: #7ed957;
+    --bb-shadow-color-dark: #4c4c4b0d;
+    --bb-shadow-color-light:#EBEBEB;
     --bb-font-family: 'Nunito', sans-serif;
 }
 
 * {
     margin: 0;
     font-size: 102%;
+    line-height: 2rem;
     word-wrap: break-word;
     scroll-behavior: smooth;
 }
