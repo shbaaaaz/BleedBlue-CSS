@@ -8,15 +8,22 @@
 @import url(./lib/_image.css);
 @import url(./lib/_grid.css);
 @import url(./lib/_button.css);
+@import url(./lib/_alert.css);
+@import url(./lib/_avatar.css);
 
 :root{
     --bb-primary-color: #1b5cc1;
+    --bb-primary-light-color: #81c5f1;
+    --bb-success-color: #16815c;
+    --bb-success-light-color: #84f1c9;
+    --bb-danger-color: #aa0e0e;
+    --bb-danger-light-color: #ff5757;
+    --bb-warning-color: rgb(146, 146, 9);
+    --bb--warning-light-color: rgb(240, 240, 149);
     --bb-secondary-color: #2c7ae0;
     --bb-dark-color: #393734;
-    --bb-inactive-color: #a6a6a6;
+    --bb-inactive-color: #cacaca;
     --bb-light-color: #ffffff;
-    --bb-danger-color: #ff5757;
-    --bb-success-color: #7ed957;
     --bb-shadow-color-dark: #4c4c4b0d;
     --bb-shadow-color-light:#EBEBEB;
     --bb-font-family: 'Nunito', sans-serif;

@@ -1,0 +1,33 @@
+.img-round {
+    border:1px solid var(--bb-inactive-color);
+    border-radius:50%;
+}
+
+.avatar-xl {
+    height:11rem;
+    width: 11rem;
+}
+
+.avatar-lg {
+    height:9rem;
+    width: 9rem;
+}
+
+.avatar-md {
+    height:7rem;
+    width: 7rem;
+}
+
+.avatar-sm {
+    height:5rem;
+    width: 5rem;
+}
+.avatar-xs {
+    height:3rem;
+    width: 3rem;
+}
+
+.img-responsive{
+    width:100%;
+    height:100%;
+}

@@ -5,7 +5,7 @@
     align-items:center;
     gap: 2rem;
     flex-wrap: wrap;
-    padding: 1rem 3rem;
+    padding: 0 2rem;
 }
 
 .navbar-brand {
@@ -16,6 +16,7 @@
     align-items:center;
     flex-grow: 1;
     gap:3rem;
+    flex-wrap: wrap;
 }
 
 .navbar-menu {
