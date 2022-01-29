@@ -36,7 +36,7 @@
 }
 
 .alert-warning {
-    background-color: var(--bb--warning-light-color);
+    background-color: var(--bb-warning-light-color);
     color: var(--bb-warning-color);
 }
 
