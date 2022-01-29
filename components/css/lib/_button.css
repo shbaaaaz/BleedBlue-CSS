@@ -10,6 +10,11 @@
     color: var(--bb-light-color);
 }
 
+.btn-primary:hover{
+    background-color: var(--bb-secondary-color);
+    color:var(--bb-light-color);
+}
+
 
 .btn-secondary {
     background-color: var(--bb-secondary-color);
@@ -28,6 +33,7 @@
 
 .btn-transparent {
     background-color: transparent;
+    border-color: transparent;
 }
 
 .btn-outline-primary{
@@ -35,6 +41,12 @@
     border: 1px solid;
     border-color: var(--bb-primary-color);
     color: var(--bb-primary-color);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--bb-secondary-color);
+    color: var(--bb-light-color);
+    border-color: var(--bb-secondary-color);
 }
 
 .btn-outline-secondary{
@@ -49,4 +61,16 @@
     border: 1px solid;
     border-color: var(--bb-dark-color);
     color: var(--bb-dark-color);
+}
+
+.btn-close {
+    background-color: transparent;
+    border-color: transparent;
+    font-size:1.5rem;
+    color:inherit;
+    cursor: pointer;
+}
+
+.btn-close:hover{
+    opacity: 0.6;
 }

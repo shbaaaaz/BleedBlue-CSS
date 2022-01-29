@@ -1,5 +1,6 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-weight:700;
+    margin: 1.25rem 0;
 }
 
 
@@ -29,13 +30,18 @@ h6, .h6{
 
 
 p, .p, span {
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight:500;
 }
 
 a, .code, code {
     text-decoration: none;
     font-weight: 500;
+    color: var(--bb-primary-color);
+    cursor: pointer;
+}
+
+a:hover{
     color: var(--bb-secondary-color);
 }
 
@@ -48,7 +54,7 @@ a, .code, code {
 }
 
 .text-rg-size{
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 .text-md-size {

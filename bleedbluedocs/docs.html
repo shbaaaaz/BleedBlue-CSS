@@ -11,16 +11,16 @@
 <body>
     <div class="page-layout">
 
-        <aside class="sidebar container shadow-dark">
+        <aside class="sidebar shadow-dark">
             <div class="sidenav">
                 <h5>Components</h5>
-                <a href="">Alert</a>
-                <a href="">Avatar</a>
-                <a href="">Badge</a>
-                <a href="">Button</a>
-                <a href="">Card</a>
-                <a href="">Image</a>
-                <a href="">Input</a>
+                <a href="#alert-section">Alert</a>
+                <a href="#avatar-section">Avatar</a>
+                <a href="#badge-section">Badge</a>
+                <a href="#button-section">Button</a>
+                <a href="#card-section">Card</a>
+                <a href="#image-section">Image</a>
+                <a href="#input-section">Input</a>
             </div>
         </aside>
 
@@ -42,25 +42,162 @@
 
         <main class="page-content container">
 
-            <!---------------------------------------- Introduction section ---------------------------->
-
-            <section id="intoduction-section">
-                <h1 class="gutter-vh-sm">Introduction</h1>
-                <p>BleedBlue CSS is an open source UI component library that provides pre-styled UI components that can be integrated in your website and can be customized as per your requirements. </p>
-                <p>BleedBlue CSS uses pre defined classes to style reponsive and accessible components and the theme is inspired by Indian Cricket Team.</p>
-            </section>
-            
-            <hr class="gutter-vh-xl">
-
              <!---------------------------------------- Alert section ---------------------------->
 
             <section id="alert-section">
-                <h2>Alert</h2>
+                <div class="component-description">
+                    <h2>Alerts</h2>
+                    <h5 class="text-light-weight"> Alerts are used to give status, feedback or information to the users based on certain action performed with a descriptive message. </h5>
+                </div>
+                <!-- Simple alerts -->
+                <div class="component-example">
+                    <h5>Example of simple alerts</h5>
+                    <p>There are 6 types of alerts which can be used based on different contexts.</p>
+                    <p>The five different alerts are : success alert, error alert, warning alert, primary alert, secondary alert, dark alert and light alert.</p>
+                    <div class="component-container-column">
+                        
+                        <div class="alert alert-primary" role="alert">
+                            Match On 👍🏼
+                        </div>
+
+                        <div class="alert alert-success" role="alert">
+                            Not Out 🙂
+                        </div>
+
+                        <div class="alert alert-error" role="alert">
+                            Ooops! That's out ☹️
+                        </div>
+
+                        <div class="alert alert-warning" role="alert">
+                            Warning! First bouncer.
+                        </div>
+
+                        <div class="alert alert-dark" role="alert">
+                            Blackcaps won.
+                        </div>
+
+                        <div class="alert alert-light" role="alert">
+                            Score level ! <a>Check the scorecard</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/wtNBHvGu13g2OzneScLM"
+                            sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                    </div>
+                </div>
+                <!-- alerts with icons -->
+
+                <div class="component-example">
+                    <h5>Example of alerts with icon</h5>
+                    <p>Alerts can have icon relevant to the alert message.</p>
+                    
+                    <div class="component-container-column"> 
+                        <div class="alert alert-success" role="alert">
+                            <span><i class="fas fa-check-circle"></i> Not Out 🙂</span>
+                        </div>
+
+                        <div class="alert alert-error" role="alert">
+                            <span><i class="fas fa-times-circle"></i> Ooops! That's out ☹️ </span>
+                        </div>
+
+                        <div class="alert alert-warning" role="alert">
+                            <span><i class="fas fa-exclamation-triangle"></i> Warning! First bouncer. </span>
+                        </div>
+                    </div>
+
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/eplIF3M9Y9mCUZsY4kNh"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                 <!-- alerts with close button -->
+
+                 <div class="component-example">
+                    <h5>Example of alerts with close button</h5>
+                    <p>Alerts can have button so that you user can close the alert box.</p>
+                    
+                    <div class="component-container-column"> 
+                        <div id="alert-close-example" class="alert alert-success" role="alert">
+                            <span><i class="fas fa-check-circle"></i> Not Out 🙂</span> 
+                            <button id="btn-alert-close-example" type="button" class="btn-close" role="close alert">&times;</button>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/SMYnN8G4udqQRpeEgUdL"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <div>
+                        <h6>JavaScript</h6>
+                        <div class="code-snippet">
+                            <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/rKSbZyu91LBvp51iO17A"
+                            sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                        
+                    </div>
+                </div>
             </section>
 
             <hr class="gutter-vh-xl">
 
-            
+            <!---------------------------------------- Avatar section ---------------------------->
+
+            <section id="avatar-section">
+                <div class="component-description">
+                    <h2>Avatar</h2>
+                    <h5 class="text-light-weight"> Avatars can be used to display user's profile picture. </h5>
+                </div>
+                <!-- Avatar in 5 different sizes -->
+                <div class="component-example">
+                    <h5>Example of simple avatars</h5>
+                    <p>Avatar is avilable in 5 different sizes</p>
+                    
+                    <div class="component-container-row">
+                        
+                        <div class="avatar avatar-xl">
+                            <img class="img-round img-responsive" src="../components//images/avatar1.jpg" alt="avatar"/>
+                        </div>
+
+                        <div class="avatar avatar-lg" role="avatar">
+                            <img class="img-round img-responsive" src="../components//images/avatar2.jpg" alt="avatar"/>
+                        </div>
+
+                        <div class="avatar avatar-md" role="avatar">
+                            <img class="img-round img-responsive" src="../components//images/avatar3.jpg" alt="avatar"/>
+                        </div>
+
+                        <div class="avatar avatar-sm" role="avatar">
+                            <img class="img-round img-responsive" src="../components//images/avatar4.jpg" alt="avatar"/>
+                        </div>
+
+                        <div class="avatar avatar-xs" role="avatar">
+                            <img class="img-round img-responsive" src="../components//images/avatar5.jpg" alt="avatar"/>
+                        </div>                        
+
+                    </div>
+
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/uaboHgbLCN9Plz6qnwtG"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+            </section>
+
+            <hr class="gutter-vh-xl">
            
         </main>            
        
@@ -68,14 +205,16 @@
             <div class="dark-bg padder-vh-lg flex-column align-middle light-text">
                 <p> Made by Shahbaz Khan </p>
                 <ul class="list-reset gutter-vh-lg">
-                    <li class="list-inline"><a href="https://twitter.com/shahbazkhan_js" target="_blank"><i class="fab fa-twitter text-md-size light-text"></i></a></li>
-                    <li class="list-inline padder-hz-md"><a href="https://github.com/shahbaz4595" target="_blank" class="dark-text"><i class="fab fa-github text-md-size light-text"></i></a></li>
-                    <li class="list-inline"><a href="https://www.linkedin.com/in/shahbaz-khan4595/" target="_blank"><i class="fab fa-linkedin text-md-size light-text"></i></a></li>
+                    <li class="list-inline"><a href="https://twitter.com/shahbazkhan_js" target="_blank" class="light-text"><i class="fab fa-twitter text-md-size"></i></a></li>
+                    <li class="list-inline padder-hz-md"><a href="https://github.com/shahbaz4595" target="_blank" class="light-text"><i class="fab fa-github text-md-size"></i></a></li>
+                    <li class="list-inline"><a href="https://www.linkedin.com/in/shahbaz-khan4595/" target="_blank" class="light-text"><i class="fab fa-linkedin text-md-size"></i></a></li>
                 </ul>
                 <p> &copy; BleedBlue CSS </p>
             </div>
         </footer>
 
     </div>
+
+    <script src="docs.js"></script>
 </body>
 </html>
