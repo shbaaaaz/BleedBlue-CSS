@@ -1,0 +1,134 @@
+.badge {
+    background-color: var(--bb-inactive-color);
+    color: var(--bb-light-color);
+    margin:0 1rem;
+    padding: 0.15rem 0.75rem;
+    border-radius: 25px;
+    font-size:1rem;
+    font-weight: 700;
+}
+
+.badge-primary {
+    background-color: var(--bb-primary-light-color);
+    color: var(--bb-light-color);
+}
+
+.badge-green {
+    background-color: var(--bb-success-light-color);
+    color: var(--bb-light-color);
+}
+
+.badge-red {
+    background-color: var(--bb-danger-light-color);
+    color: var(--bb-light-color);
+}
+
+.badge-yellow {
+    background-color: var(--bb-warning-light-color);
+    color: var(--bb-light-color);
+}
+
+.badge-light {
+    background-color: var(--bb-light-color);
+    color: var(--bb-dark-color);
+    border: 1px solid var(--bb-inactive-color);
+}
+
+/* status badge on avatar */
+
+.badge-container {
+    position: relative;
+}
+
+.status-badge {
+    padding: 2px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border:2px solid var(--bb-light-color)
+}
+
+/* status badge colors */
+
+.status-badge-online {
+    background-color: var(--bb-success-color);
+}
+
+.status-badge-busy {
+    background-color: var(--bb-danger-color);
+}
+
+.status-badge-away {
+    background-color: var(--bb-warning-light-color);
+}
+
+.status-badge-offline {
+    background-color: var(--bb-inactive-color);
+}
+
+/* badge size and positioning based on avatar size */
+
+.badge-container .avatar-xl ~ .status-badge {
+    width: 1.75rem;
+    height:1.75rem;
+    position: absolute;
+    bottom: 20px;
+    right:10px;
+}
+
+.badge-container .avatar-lg ~ .status-badge {
+    width: 1.5rem;
+    height:1.5rem;
+    position: absolute;
+    bottom: 20px;
+    right:4px;
+
+}
+
+.badge-container .avatar-md ~ .status-badge {
+    width: 1.25rem;
+    height:1.25rem;
+    position: absolute;
+    bottom: 20px;
+    right:-4px;
+}
+
+.badge-container .avatar-sm ~ .status-badge {
+    width: 1.25rem;
+    height:1.25rem;
+    position: absolute;
+    bottom: 10px;
+    right:-5px;
+}
+
+.badge-container .avatar-xs ~ .status-badge {
+    width: 1rem;
+    height:1rem;
+    position: absolute;
+    bottom: 3px;
+    right:-6px;
+}
+
+.icon-badge-container {
+    color:var(--bb-dark-color);
+    font-size: 2rem;
+    position: relative;
+}
+
+.icon-badge {
+    font-size: 0.75rem;
+    border-radius: 50%;
+    width: 1.60rem;
+    height:1.60rem;
+    position: absolute;
+    top: -14px;
+    right:-12px;
+    background-color: var(--bb-danger-light-color);
+    font-weight: 700;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bb-light-color);
+}

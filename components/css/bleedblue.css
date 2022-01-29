@@ -10,6 +10,7 @@
 @import url(./lib/_button.css);
 @import url(./lib/_alert.css);
 @import url(./lib/_avatar.css);
+@import url(./lib/_badge.css);
 
 :root{
     --bb-primary-color: #1b5cc1;
@@ -18,10 +19,11 @@
     --bb-success-light-color: #84f1c9;
     --bb-danger-color: #aa0e0e;
     --bb-danger-light-color: #ff5757;
-    --bb-warning-color: rgb(146, 146, 9);
-    --bb--warning-light-color: rgb(240, 240, 149);
+    --bb-warning-color: rgb(187, 187, 16);
+    --bb-warning-light-color: rgb(243, 243, 136);
     --bb-secondary-color: #2c7ae0;
     --bb-dark-color: #393734;
+    --bb-dark-secondary-color: #534f49;
     --bb-inactive-color: #cacaca;
     --bb-light-color: #ffffff;
     --bb-shadow-color-dark: #4c4c4b0d;
