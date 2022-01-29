@@ -61,7 +61,7 @@
 }
 
 .status-badge-away {
-    background-color: var(--bb-warning-color);
+    background-color: var(--bb-warning-light-color);
 }
 
 .status-badge-offline {
