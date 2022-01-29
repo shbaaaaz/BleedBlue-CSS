@@ -1,5 +1,4 @@
 .img-round {
-    border:1px solid var(--bb-inactive-color);
     border-radius:50%;
 }
 
