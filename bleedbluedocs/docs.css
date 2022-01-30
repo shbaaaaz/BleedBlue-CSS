@@ -94,7 +94,7 @@
     border: 1px solid var(--bb-inactive-color);
     border-radius: 10px;
     box-shadow: 0px 2px 5px var(--bb-inactive-color);
-    gap:2rem;
+    gap:1rem;
 }
 
 .component-container-row {
