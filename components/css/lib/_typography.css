@@ -155,3 +155,8 @@ a:hover{
     justify-content: center;
     align-self: center;
 }
+
+
+.full-width {
+    width: 100%;
+}

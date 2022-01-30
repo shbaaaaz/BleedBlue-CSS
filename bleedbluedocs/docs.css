@@ -88,12 +88,13 @@
 
 .component-container-column {
     margin: 2rem 0;
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
     display:flex;
     flex-direction:column;
     border: 1px solid var(--bb-inactive-color);
     border-radius: 10px;
     box-shadow: 0px 2px 5px var(--bb-inactive-color);
+    gap:1rem;
 }
 
 .component-container-row {
@@ -107,6 +108,10 @@
     border: 1px solid var(--bb-inactive-color);
     border-radius: 10px;
     box-shadow: 0px 2px 5px var(--bb-inactive-color);
+}
+
+.vertical-card-container {
+    gap: 0;
 }
 
 .code-snippet {
