@@ -586,6 +586,67 @@
             </section>
         
             <hr class="gutter-vh-xl">
+
+            <!---------------------------------------- Input section ---------------------------->
+
+            <section id="input-section">
+                <div class="component-description">
+                    <h2>Input</h2>
+                    <p>Input fields are used to take user inputs</p>
+                </div>
+                <div class="component-example">
+                    <h5>Example of contact form with input fields and required validations</h5>
+                    <div class="component-container-column"> 
+                       <form class="form">
+                            <input class="form-field" type="text" name="name" placeholder="Name*" required/>
+                            <input class="form-field" type="email" name="email" placeholder="Email*" required/>
+                            <input class="form-field" type="tel" name="phone" placeholder="Phone"/>
+                            <textarea class="form-field" name="message" placeholder="Message" rows="3"></textarea>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                       </form> 
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/jad589gt7QaKDCPKSrpm"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="component-example">
+                    <h5>Example of login form with validation and error styling</h5>
+                    <div class="component-container-column"> 
+                       <form class="form login-form" id="example-login-form" novalidate>
+                           <div>
+                                <input class="form-field" id="email-example" type="email" name="email" placeholder="Email" required/>
+                                <span id="email-error" class="form-error-message"> Please enter a valid email address</span>
+                            </div>
+                            <div>
+                                <input class="form-field" id="password-example" type="password" name="password" placeholder="Password" minlength="8" required/>
+                                <span id="password-error" class="form-error-message"> Passowrd must be atleast 8 characters long </span>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Log In</button>
+                       </form> 
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                        src="https://carbon.now.sh/embed/jUq1qZpBFO6kXzBWDtOS"
+                        sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    
+                    
+                    </div>
+                    
+                    <h6>JavaScript</h6>
+                    <iframe class="code-frame"
+                        src="https://carbon.now.sh/embed/1EDNUzDXainqdxEcyzT4"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                            
+            </section>
+                    
+            <hr class="gutter-vh-xl">
             
         </main>            
        
@@ -605,6 +666,6 @@
 
     </div>
 
-    <script src="docs.js"></script>
+    <script src="../components//js/bleedblue.js"></script>
 </body>
 </html>

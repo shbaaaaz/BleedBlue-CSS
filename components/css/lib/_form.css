@@ -1,0 +1,32 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-field {
+    border: 1px solid var(--bb-inactive-color);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.login-form {
+    border: 2px solid var(--bb-secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(146, 140, 140, 0.5);
+}
+
+.form-error-message {
+    color: var(--bb-danger-light-color);
+    font-size: 0.8rem;
+}
+
+#email-error {
+    display: none;
+}
+
+#password-error {
+    display: none;
+}
