@@ -12,6 +12,7 @@
 @import url(./lib/_avatar.css);
 @import url(./lib/_badge.css);
 @import url(./lib/_card.css);
+@import url(./lib/_form.css);
 
 :root{
     --bb-primary-color: #1b5cc1;
