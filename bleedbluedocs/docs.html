@@ -31,9 +31,9 @@
                    <a href="/index.html" class="dark-text">Home</a>
                </div>
                <ul class="navbar-menu">
-                   <li><a href="https://twitter.com/shahbazkhan_js" class="dark-text" target="_blank"><i class="fab fa-twitter text-md-size"></i></a></li>
-                   <li><a href="https://github.com/shahbaz4595" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
-                   <li><a href="https://www.linkedin.com/in/shahbaz-khan4595/" class="dark-text" target="_blank"><i class="fab fa-linkedin text-md-size"></i></a></li>
+                   <li><a href="https:/twitter.com/shahbazkhan_js" class="dark-text" target="_blank"><i class="fab fa-twitter text-md-size"></i></a></li>
+                   <li><a href="https:/github.com/shahbaz4595" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
+                   <li><a href="https:/www.linkedin.com/in/shahbaz-khan4595/" class="dark-text" target="_blank"><i class="fab fa-linkedin text-md-size"></i></a></li>
                </ul>
 
            </nav>
@@ -53,6 +53,7 @@
                     <h5>Example of simple alerts</h5>
                     <p>There are 6 types of alerts which can be used based on different contexts.</p>
                     <p>The five different alerts are : success alert, error alert, warning alert, primary alert, secondary alert, dark alert and light alert.</p>
+                    <p>In order to use the alerts you can just add the class name <span class="code">alert</span> to your text container div and you can add another class based on the type of alert you want to use like <span class="code">alert-primary, alert-sucess, alert-error, alert-warning, alert-dark, alert-light</span>.</p>
                     <div class="component-container-column">
                         
                         <div class="alert alert-primary" role="alert">
@@ -92,7 +93,7 @@
 
                 <div class="component-example">
                     <h5>Example of alerts with icon</h5>
-                    <p>Alerts can have icon relevant to the alert message.</p>
+                    <p>Alerts can have icon relevant to the alert message to attract user's attention.</p>
                     
                     <div class="component-container-column"> 
                         <div class="alert alert-success" role="alert">
@@ -120,7 +121,7 @@
 
                  <div class="component-example">
                     <h5>Example of alerts with close button</h5>
-                    <p>Alerts can have button so that you user can close the alert box.</p>
+                    <p>Alerts can have close button so that the user can close the alert box.</p>
                     
                     <div class="component-container-column"> 
                         <div id="alert-close-example" class="alert alert-success" role="alert">
@@ -155,12 +156,13 @@
             <section id="avatar-section">
                 <div class="component-description">
                     <h2>Avatar</h2>
-                    <h5 class="text-light-weight"> Avatars can be used to display user's profile picture. </h5>
+                    <h5 class="text-light-weight"> Avatars can be used to display user's profile picture on user profile, comments, navigation bar etc. </h5>
                 </div>
                 <!-- Avatar in 5 different sizes -->
                 <div class="component-example">
                     <h5>Example of simple avatars</h5>
-                    <p>Avatar is avilable in 5 different sizes</p>
+                    <p>Avatar is avilable in 5 different sizes. You can use a image and add the class <span class="code"> img-responsive </span> and <span class="code"> img-round </span> to make the image round and responsive.</p>
+                    <p>Add class <span class="code"> avatar </span> to the image container div and also add class for the avatar size like <span class="code">avatar-xl, avatar-lg, avatar-md, avatar-sm, avatar-xs</span>.</p>
                     
                     <div class="component-container-row">
                         
@@ -204,11 +206,13 @@
             <section id="badge-section">
                 <div class="component-description">
                     <h2>Badge</h2>
-                    <h5 class="text-light-weight"> Badges are used to display status or notifications. </h5>
+                    <h5 class="text-light-weight"> Badges are used to display status or notifications. It can be used with text, images, or icons to grab user's attention. </h5>
                 </div>
                 <div class="component-example">
                     <h5>Example of basic badge</h5>
-                    <p> There are 6 variations of basic badges that can be used in different context </p>
+                    <p> There are 6 variations of basic badges that can be used in different context. </p>
+                    <p>You just need to add a class <span class="code">badge</span> to wrap the text as a basic badge.</p>
+                    <p>You can also add class for different variations of basic badges like <span class="code">badge-primary, badge-green, badge-red, badge-yellow, badge light</span>.</p>
                     <div class="component-container-row"> 
                         <div>
                             <h2>Example of heading with basic badge <span class="badge"> SOLD </span></h2>
@@ -229,6 +233,8 @@
 
                 <div class="component-example">
                     <h5>Badge on Avatars</h5>
+                    <p>You can add status badge to an avatar for displaying the status of the user.</p>
+                    <p>Check the code below to add a status badge on your avatar.</p>
                     <div class="component-container-row">
                         <div class="badge-container">
                             <div class="avatar avatar-xl">
@@ -276,6 +282,8 @@
 
                 <div class="component-example">
                     <h5>Badge on Icons</h5>
+                    <p>Badges can also be used to display the count of notifications, messages or cart items to gran user's attention. </p>
+                    <p>You can check the below code for making a badge icon component.</p>
                     <div class="component-container-row">
                         <a class="icon-badge-container">
                             <i class="fas fa-bell"><span class="icon-badge">9</span></i>    
@@ -304,11 +312,12 @@
             <section id="button-section">
                 <div class="component-description">
                     <h2>Buttons</h2>
-                    <h5 class="text-light-weight"> Buttons are used to perform actions on click by users. </h5>
+                    <h5 class="text-light-weight"> Buttons are used to perform actions on user's click. You can use solid buttons, floating buttons, icon button based on different scenarios. </h5>
                 </div>
                 <div class="component-example">
                     <h5>Example of solid buttons</h5>
-                    <p> There are 5 variations of solid buttons that can be used in different context </p>
+                    <p> There are 5 variations of solid buttons that can be used in different context. </p>
+                    <p> In order to attract user's attention you can use primary button which is also called as call to action. </p>
                     <div class="component-container-row"> 
                             <button class="btn btn-primary"> Primary </button>
                             <button class="btn btn-success"> Success </button>
@@ -326,6 +335,8 @@
 
                 <div class="component-example">
                     <h5> Other variants of button </h5>
+                    <p>There are few other variants of button like button with an icon, button with outline, disabled button, floating button, link or icon button.</p>
+                    <p>You can check the below code for adding a button component in your web application based on your need.</p>
                     <div class="component-container-row">
                             <button class="btn btn-primary"><span class="padder-hz-xs"><i class="fas fa-save"></i></span>Save</button>
                             <button class="btn btn-outline-primary"> Primary Button Outline</button>
@@ -353,10 +364,12 @@
             <section id="card-section">
                 <div class="component-description">
                     <h2>Cards</h2>
-                    <h5 class="text-light-weight"> Cards are used as a container where related information are stored at one place. </h5>
+                    <h5 class="text-light-weight"> Cards are used as a container where related information are stored at one place. There are different types of card which can be used in different scenarios like horizontal card, vertical card, card with badge, card with text overlay, card with close button etc.</h5>
                 </div>
                 <div class="component-example">
                     <h5>Example of horizontal card</h5>
+                    <p>There are two variants of the horizontal card, one is a basic horizontal card and the second is a horizontal card with badge.</p>
+                    <p>You can check the code below to copy the component in your web page.</p>
                     <div class="component-container-column"> 
 
                         <div class="card card-horizontal">
@@ -421,7 +434,7 @@
                 
                 <div class="component-example">
                     <h5>Example of Vertical card</h5>
-                    
+                    <p>There are three variants of the vertical card. You can check the code below to copy the component in your web page.</p>
                     <div class="component-container-row vertical-card-container align-center flex-wrap justify-between">
                         <div class="card card-vertical card-vertical-thin">
                             <div class="card-image-vertical">
@@ -511,7 +524,8 @@
 
                 <div class="component-example">
                     <h5>Example of Card with text overlay and text only card with dismiss button</h5>
-                    
+                    <p>Below are two other variants of card one for displaying a card with text overlay and the second is text only card that can be closed by the user.</p>
+                    <p>Check the code below to copy the component in your web page.</p>
                     <div class="component-container-row vertical-card-container align-center flex-wrap justify-between">
                             <div class="card card-video-container">
                                 <div class="card-video">
@@ -554,9 +568,11 @@
             <section id="image-section">
                 <div class="component-description">
                     <h2>Image</h2>
+                    <p>Images can be responsive to fit the container height and width and can be customised to be in round shape.</p>
                 </div>
                 <div class="component-example">
                     <h5>Example of responsive image</h5>
+                    <p>You need to add class <span class="code">img-responsive</span> to the image in order to make the image responsive and fit to its container height and width.</p>
                     <div class="component-container-row"> 
                         <img class="img-responsive" src="../components/images/champions.jpg" alt="Example Image"/>
                     </div>
@@ -570,6 +586,7 @@
                 
                 <div class="component-example">
                     <h5>Example of round image</h5>
+                    <p>You need to add class <span class="code">img-round</span> to the image in order to make the image round shaped. </p>
                     <div class="component-container-row"> 
                         <div class="round-image-container">
                             <img class="img-responsive img-round" src="../components/images/trophy.jpg" alt="Example Image"/>
@@ -591,10 +608,12 @@
             <section id="input-section">
                 <div class="component-description">
                     <h2>Input</h2>
-                    <p>Input fields are used to take user inputs</p>
+                    <p>Input fields are used to take user inputs. There are different types of input fields like text field, password field, email field, phone field, textarea field etc.</p>
                 </div>
                 <div class="component-example">
                     <h5>Example of contact form with input fields and required validations</h5>
+                    <p>Below is a basic contact form example with text field, email field, phone field and textarea field with required validation applied on certain fields.</p>
+                    <p>You can check the code below and copy the form component to add it in your web page.</p>
                     <div class="component-container-column"> 
                        <form class="form">
                             <input class="form-field" type="text" name="name" placeholder="Name*" required/>
@@ -614,6 +633,7 @@
 
                 <div class="component-example">
                     <h5>Example of login form with validation and error styling</h5>
+                    <p>Below is an example of login form with custom validation through JavaScript. You can check the code below and copy the component along with the javascript code and integrate it into your web page however it is advisable to change the field id names acoording to your usage.</p>
                     <div class="component-container-column"> 
                        <form class="form login-form" id="example-login-form" novalidate>
                            <div>
