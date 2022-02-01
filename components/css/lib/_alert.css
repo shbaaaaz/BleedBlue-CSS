@@ -11,10 +11,6 @@
     box-shadow: 0px 1px 3px rgb(168, 163, 163);
 }
 
-.alert .fas {
-    margin-right: 1rem;
-}
-
 .alert-primary {
     background-color: var(--bb-primary-light-color);
     color: var(--bb-primary-color);
