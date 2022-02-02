@@ -25,18 +25,21 @@
         </aside>
 
         <header class="page-header">
-           <nav class="navbar light-bg shadow-dark">
-               <div class="navbar-brand">
-                   <h5 class="primary-bg light-text padder-vh-xs padder-hz-lg border-pill">BleedBlue</h5>
-                   <a href="/index.html" class="dark-text">Home</a>
-               </div>
-               <ul class="navbar-menu">
-                   <li><a href="https:/twitter.com/shahbazkhan_js" class="dark-text" target="_blank"><i class="fab fa-twitter text-md-size"></i></a></li>
-                   <li><a href="https:/github.com/shahbaz4595" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
-                   <li><a href="https:/www.linkedin.com/in/shahbaz-khan4595/" class="dark-text" target="_blank"><i class="fab fa-linkedin text-md-size"></i></a></li>
-               </ul>
-
-           </nav>
+            <nav class="navbar light-bg shadow-dark">
+                <div id="bb-navbar-brand-container" class="navbrand-container">
+                     <div class="navbar-brand">
+                         <h5 class="primary-bg light-text padder-vh-xs padder-hz-lg border-pill">BleedBlue</h5>
+                         <a href="/index.html" class="dark-text">Home</a>
+                         <button id="btn-burger-close" class="btn-close btn-menu-close">&times;</button>
+                     </div>
+                 </div>
+                <span class="mobile-menu-burger" id="btn-burger"><a href=""><i class="fas fa-bars dark-text"></i></a></span>
+                <ul class="navbar-menu">
+                    <li><a href="https://twitter.com/shahbazkhan_js" class="dark-text" target="_blank"><i class="fab fa-twitter text-md-size"></i></a></li>
+                    <li><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/shahbaz-khan4595/" class="dark-text" target="_blank"><i class="fab fa-linkedin text-md-size"></i></a></li>
+                </ul>
+            </nav>
         </header>
 
         <main class="page-content container">
@@ -382,10 +385,10 @@
                                     <p class="text-rg-size primary-text">by BleedBlue</p>
                                     <p> <span>Price:</span> 2000 Rs.</p>
                                     <div>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
                                         <i class="far fa-star"></i>
                                     </div>
                                 </div>
@@ -408,10 +411,10 @@
                                     <p class="text-rg-size primary-text">by BleedBlue</p>
                                     <p> <span>Price:</span> 2000 Rs.</p>
                                     <div>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
                                         <i class="far fa-star"></i>
                                     </div>
                                 </div>
@@ -446,10 +449,10 @@
                                     <p class="text-rg-size primary-text">by BleedBlue</p>
                                     <p> <span>Price:</span> 3000 Rs.</p>
                                     <div>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
                                         <i class="far fa-star"></i>
                                     </div>
                                 </div>
@@ -471,10 +474,10 @@
                                     <p class="text-rg-size primary-text">by BleedBlue</p>
                                     <p> <span>Price:</span> 1000 Rs.</p>
                                     <div>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
-                                        <i class="far fa-star rating-filled"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
                                         <i class="far fa-star"></i>
                                     </div>
                                 </div>
@@ -633,7 +636,7 @@
 
                 <div class="component-example">
                     <h5>Example of login form with validation and error styling</h5>
-                    <p>Below is an example of login form with custom validation through JavaScript. You can check the code below and copy the component along with the javascript code and integrate it into your web page however it is advisable to change the field id names acoording to your usage.</p>
+                    <p>Below is an example of login form with custom validation through JavaScript. You can check the code below and copy the component along with the javascript code and integrate it into your web page however, it is advisable to change the field id names according to your usage.</p>
                     <div class="component-container-column"> 
                        <form class="form login-form" id="example-login-form" novalidate>
                            <div>
@@ -666,6 +669,8 @@
             </section>
                     
             <hr class="gutter-vh-xl">
+
+            <a href="#" class="btn btn-float"><i class="fas fa-arrow-up"></i></a>
             
         </main>            
        
@@ -676,7 +681,7 @@
                 <p> Made by Shahbaz Khan </p>
                 <ul class="list-reset gutter-vh-lg">
                     <li class="list-inline"><a href="https://twitter.com/shahbazkhan_js" target="_blank" class="light-text"><i class="fab fa-twitter text-md-size"></i></a></li>
-                    <li class="list-inline padder-hz-md"><a href="https://github.com/shahbaz4595" target="_blank" class="light-text"><i class="fab fa-github text-md-size"></i></a></li>
+                    <li class="list-inline padder-hz-md"><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" target="_blank" class="light-text"><i class="fab fa-github text-md-size"></i></a></li>
                     <li class="list-inline"><a href="https://www.linkedin.com/in/shahbaz-khan4595/" target="_blank" class="light-text"><i class="fab fa-linkedin text-md-size"></i></a></li>
                 </ul>
                 <p> &copy; BleedBlue CSS </p>
@@ -685,6 +690,7 @@
 
     </div>
 
-    <script src="../components//js/bleedblue.js"></script>
+    <script src="../components/js/bleedblue.js"></script>
+    <script src="/bleedbluedocs/docs.js"></script>
 </body>
 </html>

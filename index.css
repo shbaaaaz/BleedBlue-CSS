@@ -18,9 +18,61 @@
 header {
     grid-area: header;
 }
+
 main {
     grid-area: main;
 }
+
 footer{
     grid-area: footer;
+}
+
+.btn-float {
+    position: fixed;
+    right: 0.8rem;
+    bottom: 2rem;
+}
+
+/* hamburger for mobile */
+
+.mobile-menu-burger {
+    display: none;
+}
+
+.btn-menu-close {
+    display: none;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .navbrand-container {
+        position: relative;
+        display: none;
+    }
+
+    .mobile-menu-burger {
+        display: block;
+    }
+
+    .btn-menu-close {
+        display:block;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.2rem;
+    }
+    .navbar-brand {
+        z-index: 2;
+        flex-direction: column;
+        position: fixed;
+        justify-content: flex-start;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        gap: 0.5rem;
+        background-color: var(--bb-light-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+        padding-top: 1.5rem;
+    }
 }

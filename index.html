@@ -17,13 +17,17 @@
 
         <header>
            <nav class="navbar light-bg shadow-dark">
-               <div class="navbar-brand">
-                   <h5 class="primary-bg light-text padder-vh-xs padder-hz-lg border-pill">BleedBlue</h5>
-                   <a href="/bleedbluedocs/docs.html" class="dark-text">Documentation</a>
-               </div>
+               <div id="bb-navbar-brand-container" class="navbrand-container">
+                    <div class="navbar-brand">
+                        <h5 class="primary-bg light-text padder-vh-xs padder-hz-lg border-pill">BleedBlue</h5>
+                        <a href="/bleedbluedocs/docs.html" class="dark-text">Documentation</a>
+                        <button id="btn-burger-close" class="btn-close btn-menu-close">&times;</button>
+                    </div>
+                </div>
+               <span class="mobile-menu-burger" id="btn-burger"><a href=""><i class="fas fa-bars dark-text"></i></a></span>
                <ul class="navbar-menu">
                    <li><a href="https://twitter.com/shahbazkhan_js" class="dark-text" target="_blank"><i class="fab fa-twitter text-md-size"></i></a></li>
-                   <li><a href="https://github.com/shahbaz4595" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
+                   <li><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
                    <li><a href="https://www.linkedin.com/in/shahbaz-khan4595/" class="dark-text" target="_blank"><i class="fab fa-linkedin text-md-size"></i></a></li>
                </ul>
 
@@ -76,19 +80,21 @@
                     </iframe>
                 </div>
             </section>
-
+            <a href="#" class="btn btn-float"><i class="fas fa-arrow-up"></i></a>
         </main>            
        
         <footer class="dark-bg padder-vh-lg flex-column align-middle light-text">
             <p> Made by Shahbaz Khan </p>
             <ul class="list-reset gutter-vh-lg">
                 <li class="list-inline"><a href="https://twitter.com/shahbazkhan_js" target="_blank" class="light-text"><i class="fab fa-twitter text-md-size"></i></a></li>
-                <li class="list-inline padder-hz-md"><a href="https://github.com/shahbaz4595" target="_blank" class="light-text"><i class="fab fa-github text-md-size"></i></a></li>
+                <li class="list-inline padder-hz-md"><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" target="_blank" class="light-text"><i class="fab fa-github text-md-size"></i></a></li>
                 <li class="list-inline"><a href="https://www.linkedin.com/in/shahbaz-khan4595/" target="_blank" class="light-text"><i class="fab fa-linkedin text-md-size"></i></a></li>
             </ul>
             <p> &copy; BleedBlue CSS </p>
         </footer>
 
     </div>
+
+    <script src="/bleedbluedocs/docs.js"></script>
 </body>
 </html>

@@ -40,7 +40,11 @@
   }
 
   .navbar-menu {
-    justify-content:center;
+    justify-content:flex-end;
+  }
+
+  .navbar {
+    padding: 1rem 2rem;
   }
 
 }
