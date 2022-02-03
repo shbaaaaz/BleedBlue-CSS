@@ -83,12 +83,12 @@
 /* component container styling */
 
 .component-description, .component-example {
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .component-container-column {
     margin: 2rem 0;
-    padding: 1rem;
+    padding: 1rem 1rem;
     display:flex;
     flex-direction:column;
     border: 1px solid var(--bb-inactive-color);
