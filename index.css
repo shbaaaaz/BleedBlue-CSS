@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 @import url(/components/css/bleedblue.css);
 
-
 .grid-container{
     margin:0;
     padding: 0;
@@ -14,13 +13,24 @@
     "footer footer footer footer footer";
 }
 
-
 header {
     grid-area: header;
 }
+
 main {
     grid-area: main;
 }
+
 footer{
     grid-area: footer;
 }
+
+.btn-float {
+    position: fixed;
+    right: 0.8rem;
+    bottom: 2rem;
+}
+
+
+
+

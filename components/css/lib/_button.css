@@ -9,6 +9,7 @@
 .btn-primary {
     background-color: var(--bb-primary-color);
     color: var(--bb-light-color);
+    border: 1px solid var(--bb-primary-color);
 }
 
 .btn-primary:hover{
@@ -20,6 +21,7 @@
 .btn-danger {
     background-color: var(--bb-danger-light-color);
     color: var(--bb-light-color);
+    border: 1px solid var(--bb-danger-color);
 }
 
 .btn-danger:hover {
@@ -30,6 +32,7 @@
 .btn-success {
     background-color: var(--bb-success-light-color);
     color: var(--bb-light-color);
+    border: 1px solid var(--bb-success-color);
 }
 
 .btn-success:hover {
@@ -52,6 +55,7 @@
 .btn-dark {
     background-color: var(--bb-dark-color);
     color: var(--bb-light-color);
+    border: 1px solid var(--bb-dark-color)
 }
 
 .btn-dark:hover {
@@ -63,6 +67,7 @@
 .btn-disabled {
     background-color: var(--bb-inactive-color);
     color: var(--bb-light-color);
+    border: 1px solid var(--bb-inactive-color);
 }
 
 .btn-transparent {
@@ -70,27 +75,27 @@
     border-color: transparent;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     background-color: transparent;
     border: 1px solid;
     border-color: var(--bb-primary-color);
     color: var(--bb-primary-color);
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     background-color: var(--bb-secondary-color);
     color: var(--bb-light-color);
     border-color: var(--bb-secondary-color);
 }
 
-.btn-outline-secondary{
+.btn-outline-secondary {
     background-color: transparent;
     border: 1px solid;
     border-color: var(--bb-secondary-color);
     color: var(--bb-secondary-color);
 }
 
-.btn-outline-dark{
+.btn-outline-dark {
     background-color: transparent;
     border: 1px solid;
     border-color: var(--bb-dark-color);
@@ -105,7 +110,7 @@
     cursor: pointer;
 }
 
-.btn-float{
+.btn-float {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -118,11 +123,11 @@
     font-size:1rem;
 }
 
-.btn-float:hover{
+.btn-float:hover {
     background-color: var(--bb-secondary-color);
     color: var(--bb-light-color);
 }
 
-.btn-close:hover{
+.btn-close:hover {
     opacity: 0.6;
 }
