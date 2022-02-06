@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="page-layout">
-
+        <!-- sidebar listing all the components -->
         <aside class="sidebar shadow-dark">
             <div class="sidenav">
                 <h5>Components</h5>
@@ -22,6 +22,14 @@
                 <a href="#card-section">Card</a>
                 <a href="#image-section">Image</a>
                 <a href="#input-section">Input</a>
+                <a href="#list-section">List</a>
+                <a href="#modal-section">Modal</a>
+                <a href="#navigation-section">Navigation</a>
+                <a href="#rating-section">Rating</a>
+                <a href="#slider-section">Slider</a>
+                <a href="#grid-section">Grid</a>
+                <a href="#typography-section">Typography</a>
+                <a href="#toast-section">Toast</a>
             </div>
         </aside>
 
@@ -210,6 +218,7 @@
                     <h2>Badge</h2>
                     <h5 class="text-light-weight"> Badges are used to display status or notifications. It can be used with text, images, or icons to grab user's attention. </h5>
                 </div>
+                <!-- Basic badge -->
                 <div class="component-example">
                     <h5>Example of basic badge</h5>
                     <p> There are 6 variations of basic badges that can be used in different context. </p>
@@ -221,7 +230,7 @@
                             <h3>Example of heading with primary badge<span class="badge badge-primary">  TRENDING </span></h3>
                             <h4>Example of heading with green badge<span class="badge badge-green"> NEW </span></h4>
                             <h5>Example of heading with red badge<span class="badge badge-red"> SALE </span></h5>
-                            <h6>Example of heading with yellow badge<span class="badge badge-yellow"> BEST SELLER </span></h6>
+                            <h6>Example of heading with yellow badge<span class="badge badge-yellow"> BEST-SELLER </span></h6>
                             <p>Example of paragraph with light badge<span class="badge badge-light"> COMING SOON </span></p>
                         </div>
                     </div>
@@ -617,7 +626,7 @@
                     <p>Below is a basic contact form example with text field, email field, phone field and textarea field with required validation applied on certain fields.</p>
                     <p>You can check the code below and copy the form component to add it in your web page.</p>
                     <div class="component-container-column"> 
-                       <form class="form">
+                       <form class="form contact-form">
                             <input class="form-field" type="text" name="name" placeholder="Name*" required/>
                             <input class="form-field" type="email" name="email" placeholder="Email*" required/>
                             <input class="form-field" type="tel" name="phone" placeholder="Phone"/>
@@ -637,7 +646,7 @@
                     <h5>Example of login form with validation and error styling</h5>
                     <p>Below is an example of login form with custom validation through JavaScript. You can check the code below and copy the component along with the javascript code and integrate it into your web page however, it is advisable to change the field id names according to your usage.</p>
                     <div class="component-container-column"> 
-                       <form class="form login-form" id="example-login-form" novalidate>
+                       <form class="form login-form" id="example-login-form">
                            <div>
                                 <input class="form-field" id="email-example" type="email" name="email" placeholder="Email" required/>
                                 <span id="email-error" class="form-error-message"> Please enter a valid email address</span>

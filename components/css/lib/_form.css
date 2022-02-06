@@ -7,11 +7,11 @@
 .form-field {
     border: 1px solid var(--bb-inactive-color);
     border-radius: 5px;
-    width: 99%;
+    width: 100%;
     font-size: 1rem;
 }
 
-.login-form {
+.contact-form, .login-form {
     border: 2px solid var(--bb-secondary-color);
     padding: 2rem;
     border-radius: 10px;
