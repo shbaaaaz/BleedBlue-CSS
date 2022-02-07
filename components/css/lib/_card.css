@@ -16,18 +16,29 @@
     width: 17rem;
     height: auto;
     border:0;
+    padding: 1rem;
     position: relative;
 }
 
 .card-image-horizontal img {
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
 }
 
 .horizontal-card-badge {
     position:absolute;
-    top: 0.2rem;
-    left: -0.8rem;
+    top: 1.3rem;
+    left: 0.3rem;
     font-size: 0.7rem;
+}
+
+.card-horizontal-small {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+    gap: 1rem; 
+    padding: 0.5rem 0;
 }
 
 .card-vertical {
@@ -50,21 +61,21 @@
 }
 
 .card-image-vertical {
-    width: 17rem;
+    width: 15rem;
     height: 14rem;
-    border:1px solid var(--bb-inactive-color);
     border-radius: 10px;
     position: relative;
+    padding: 1rem;
 }
 
 .card-image-vertical img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 
 .vertical-card-badge {
     position:absolute;
-    top: 0.2rem;
-    right: -0.8rem;
+    top: 1.3rem;
+    right: 0.3rem;
     font-size: 0.7rem;
 }
 

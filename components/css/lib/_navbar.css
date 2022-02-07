@@ -5,6 +5,7 @@
     align-items:center;
     gap: 0.5rem;
     padding: 1.25rem 2rem;
+    flex-wrap: wrap;
 }
 
 .navbar-brand {
@@ -15,6 +16,10 @@
     align-items:center;
     flex-grow: 1;
     gap:2rem;
+}
+
+.brand-name {
+    color: var(--bb-primary-color);
 }
 
 .navbar-menu {
@@ -28,7 +33,25 @@
     gap: 2rem;
 }
 
-.brand-icon {
+.brand-logo {
   height: 2.5rem;
   width: 5rem;
+}
+
+/* searchbar */
+
+.nav-search-field {
+    border: 1px solid var(--bb-inactive-color);
+    font-size:1rem;
+    border-radius:5px;
+}
+
+.nav-search-field:focus {
+    outline-color: var(--bb-secondary-color);
+}
+
+.btn-nav-search {
+    margin:0;
+    padding:0;
+    background-color: transparent;
 }

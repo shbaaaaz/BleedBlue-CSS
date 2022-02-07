@@ -1,0 +1,36 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color:var(--bb-backdrop-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modal {
+    border: 1px solid var(--bb-inactive-color);
+    background-color: var(--bb-light-color);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 60vw;
+}
+
+.modal-title {
+    position: relative;
+}
+
+.modal-close-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: -0.8rem;
+}
+
+/* example modal styling */
+
+#example-modal {
+    display: none;
+}

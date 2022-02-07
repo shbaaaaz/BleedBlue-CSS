@@ -9,7 +9,7 @@
 }
 
 .badge-primary {
-    background-color: var(--bb-primary-light-color);
+    background-color: var(--bb-primary-color);
     color: var(--bb-light-color);
 }
 

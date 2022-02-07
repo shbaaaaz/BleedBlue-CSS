@@ -2,6 +2,14 @@
     padding: 1rem 2rem;
 }
 
+@media only screen and (max-width: 820px) {
+    
+    .container {
+        padding: 1rem 1rem;
+    }
+    
+ }
+
 .clickable {
     cursor:pointer;
 }
@@ -165,6 +173,10 @@
 }
 
 /********************************* gap ******************************************/
+.gap-none {
+    gap: 0;
+}
+
 .gap-xs {
     gap: 0.5rem;
 }

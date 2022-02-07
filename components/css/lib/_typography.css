@@ -1,7 +1,7 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-weight:700;
-    margin: 1.25rem 0;
-    line-height: 3rem;
+    margin: 1.50rem 0;
+    line-height: 2rem;
 }
 
 
@@ -30,7 +30,7 @@ h6, .h6{
 }
 
 
-p, .p {
+p, .p, li {
     font-size: 1.05rem;
     font-weight:500;
 }
@@ -49,12 +49,15 @@ a:hover{
 
 
 /****************************** text size ****************************/
-
-.text-sm-size{
+.text-xs-size {
     font-size:0.5rem;
 }
 
-.text-rg-size{
+.text-sm-size {
+    font-size:0.75rem;
+}
+
+.text-rg-size {
     font-size: 1.05rem;
 }
 
@@ -117,11 +120,11 @@ a:hover{
 }
 
 .justify-start{
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .justify-end {
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .justify-around {
@@ -139,6 +142,7 @@ a:hover{
 .align-start {
     align-items: start;
 }
+
 .align-center {
     align-items:center;
 }
