@@ -40,14 +40,23 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
     color: var(--bb-dark-color);
-    padding-left: 2rem;
     padding-bottom: 2rem;
 }
 
-.sidenav a {
+.sidenav h5 {
+    padding-left: 2rem;
+}
+.sidenav-item:hover {
     color: var(--bb-dark-color);
+    background-color: var(--bb-inactive-color);
+}
+
+.sidenav-item a {
+    display: block;
+    color: var(--bb-dark-color);
+    padding-left: 2rem;
 }
 
 @media only screen and (max-width: 820px) {

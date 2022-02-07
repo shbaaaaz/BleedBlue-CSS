@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com)cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
 @import url(./lib/_colors.css);
 @import url(./lib/_generalStyle.css);
-@import url(./lib//_typography.css);
 @import url(./lib/_reset.css);
 @import url(./lib/_navbar.css);
 @import url(./lib/_image.css);
@@ -13,6 +12,9 @@
 @import url(./lib/_badge.css);
 @import url(./lib/_card.css);
 @import url(./lib/_form.css);
+@import url(./lib/_list.css);
+@import url(./lib/_modal.css);
+@import url(./lib//_typography.css);
 
 :root{
     --bb-primary-color: #1b5cc1;
@@ -30,6 +32,7 @@
     --bb-light-color: #ffffff;
     --bb-shadow-color-dark: #4c4c4b0d;
     --bb-shadow-color-light:#EBEBEB;
+    --bb-backdrop-color: rgba(80,78,78,.5);
     --bb-font-family: 'Nunito', sans-serif;
 }
 

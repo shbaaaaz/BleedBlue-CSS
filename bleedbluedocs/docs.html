@@ -10,33 +10,50 @@
     <title>BleedBlue CSS</title>
 </head>
 <body>
+
+    <!-- modal pop up -->
+    <div class="modal-backdrop" id="example-modal">
+        <div class="modal">
+            <div class="modal-title">
+                <h6>Bleed Blue CSS</h6>
+                <button id="icon-modal-close-example" type="button" class="btn-close modal-close-icon" role="close modal">&times;</button>
+            </div>
+            <div class="modal-content">
+                <hr class="gutter-vh-xs">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a dui sagittis, suscipit elit id, rutrum ex. In tincidunt auctor bibendum. Nunc nec pulvinar lorem. Sed imperdiet, augue sed egestas sodales, libero elit commodo enim, ac faucibus nisl nisl quis ipsum.
+                </p>
+                <hr class="gutter-vh-xs">
+            </div>
+            <div class="modal-footer flex-row justify-end gap-sm">
+                <button class="btn btn-primary">OK</button>
+                <button id="btn-modal-close-example" class="btn btn-danger">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
     <div class="page-layout">
         <!-- sidebar listing all the components -->
         <aside class="sidebar shadow-dark">
-            <div class="sidenav">
-                <h5>Components</h5>
-                <a href="#alert-section">Alert</a>
-                <a href="#avatar-section">Avatar</a>
-                <a href="#badge-section">Badge</a>
-                <a href="#button-section">Button</a>
-                <a href="#card-section">Card</a>
-                <a href="#image-section">Image</a>
-                <a href="#input-section">Input</a>
-                <a href="#list-section">List</a>
-                <a href="#modal-section">Modal</a>
-                <a href="#navigation-section">Navigation</a>
-                <a href="#rating-section">Rating</a>
-                <a href="#slider-section">Slider</a>
-                <a href="#grid-section">Grid</a>
-                <a href="#typography-section">Typography</a>
-                <a href="#toast-section">Toast</a>
-            </div>
+            <ul class="sidenav list-reset">
+                <li><h5>Components</h5></li>
+                <li class="sidenav-item"><a href="#alert-section">Alert</a></li>
+                <li class="sidenav-item"><a href="#avatar-section">Avatar</a></li>
+                <li class="sidenav-item"><a href="#badge-section">Badge</a></li>
+                <li class="sidenav-item"><a href="#button-section">Button</a></li>
+                <li class="sidenav-item"><a href="#card-section">Card</a></li>
+                <li class="sidenav-item"><a href="#image-section">Image</a></li>
+                <li class="sidenav-item"><a href="#input-section">Input</a></li>
+                <li class="sidenav-item"><a href="#list-section">List</a></li>
+                <li class="sidenav-item"><a href="#modal-section">Modal</a></li>
+                <li class="sidenav-item"><a href="#navigation-section">Navigation</a></li>
+                <li class="sidenav-item"><a href="#typography-section">Typography</a></li>
+            </ul>
         </aside>
 
         <header class="page-header">
             <nav class="navbar light-bg shadow-dark">
                 <div class="navbar-brand">
-                    <div class="brand-icon">
+                    <div class="brand-logo">
                         <img class="img-responsive" src="/components/images/icon.png"/>
                     </div>
                     <a href="/index.html" class="dark-text">Home</a>
@@ -442,6 +459,28 @@
                         </iframe>
                     </div>
                 </div>
+
+                <div class="component-example">
+                    <h5>Example of small horizontal card</h5>
+                    <p>Small horizontal card can be used to display notifications.</p>
+                    <div class="component-container-row"> 
+                        <div class="card card-horizontal-small align-center">
+                            <div class="badge-container">
+                                <div class="avatar avatar-xs">
+                                    <img class="img-round img-responsive" src="../components/images/avatar5.jpg" alt="avatar"/>
+                                </div>
+                                <span class="status-badge status-badge-online"></span>
+                            </div> 
+                            <p> KL Rahul is live now </p>
+                        </div> 
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                        src="https://carbon.now.sh/embed/lKeqlG6gTGrz5GlcNg8X"
+                        sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
                 
                 <div class="component-example">
                     <h5>Example of Vertical card</h5>
@@ -677,6 +716,377 @@
             </section>
                     
             <hr class="gutter-vh-xl">
+
+            <!---------------------------------------- List section ---------------------------->
+
+            <section id="list-section">
+                <div class="component-description">
+                    <h2>List</h2>
+                    <p>Lists can be used to display a collection of items in ordered or un-ordered manners.</p>
+                </div>
+                <div class="component-example">
+                    <h5>Example of ordered list.</h5>
+                    <p>Below are the different types of ordered list which can be used anywhere in your website where you want to display a collection of items in an ordered manner.</p>
+                    <p>You can check the code below and copy the list component to add it in your web page.</p>
+                    <div class="component-container-row"> 
+                       <ol class="styled-list">
+                           <li>Rohit Sharma in the list</li>
+                           <li>KL Rahul in the list</li>
+                           <li>Virat Kohli in the list</li>
+                       </ol>
+
+                       <ol class="styled-list" reversed>
+                            <li>Rohit Sharma in the reversed list</li>
+                            <li>KL Rahul in the reversed list</li>
+                            <li>Virat Kohli in the reversed list</li>
+                        </ol>
+
+                        <ol class="styled-list list-lower-roman">
+                            <li>Rohit Sharma in a list with lowercase roman</li>
+                            <li>KL Rahul in a list with lowercase roman</li>
+                            <li>Virat Kohli in a list with lowercase roman</li>
+                        </ol>
+
+                        <ol class="styled-list list-upper-roman">
+                            <li>Rohit Sharma in a list with uppercase roman</li>
+                            <li>KL Rahul in a list with uppercase roman</li>
+                            <li>Virat Kohli in a list with uppercase roman</li>
+                        </ol>
+
+                        <ol class="styled-list list-lower-alpha">
+                            <li>Rohit Sharma in a list with lowercase alphabet</li>
+                            <li>KL Rahul in a list with lowercase alphabet</li>
+                            <li>Virat Kohli in a list with lowercase alphabet</li>
+                        </ol>
+
+                        <ol class="styled-list list-upper-alpha">
+                            <li>Rohit Sharma in a list uppercase alphabet</li>
+                            <li>KL Rahul in a list with uppercase alphabet</li>
+                            <li>Virat Kohli in a list with uppercase alphabet</li>
+                        </ol>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/2Iv1qynO0Tn7NMsZj4cs"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="component-example">
+                    <h5>Example of un-ordered list.</h5>
+                    <p>Below are the examples of un-ordered list which can be used anywhere in your website where you want to display a collection of items in an un-ordered manner.</p>
+                    <p>You can check the code below and copy the list component to add it in your web page.</p>
+                    <div class="component-container-row"> 
+                       <ul class="styled-list">
+                           <li>Rohit Sharma in an un-ordered list with bullet</li>
+                           <li>KL Rahul in an un-ordered list with bullet</li>
+                           <li>Virat Kohli in an un-ordered list with bullet</li>
+                       </ul>
+
+                       <ul class="styled-list list-square">
+                            <li>Rohit Sharma in an un-ordered list with square</li>
+                            <li>KL Rahul in an un-ordered list with square</li>
+                            <li>Virat Kohli in an un-ordered list with square</li>
+                        </ul>
+
+                        <ul class="styled-list list-circle">
+                            <li>Rohit Sharma in an un-ordered list with circle</li>
+                            <li>KL Rahul in an un-ordered list with circle</li>
+                            <li>Virat Kohli in an un-ordered list with circle</li>
+                        </ul>   
+
+                        <ul class="styled-list list-reset">
+                            <li>Rohit Sharma in an un-ordered list with circle</li>
+                            <li>KL Rahul in an un-ordered list with circle</li>
+                            <li>Virat Kohli in an un-ordered list with circle</li>
+                        </ul>
+
+                        <ul class="styled-list list-inline">
+                            <li>Rohit Sharma</li>
+                            <li>KL Rahul</li>
+                            <li>Virat Kohli</li>
+                        </ul>
+
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/JS82FIG4Yxe3ixSIsNNm"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="component-example">
+                    <h5>Example of stacked list.</h5>
+                    <p>Below is and example of stacked list which can be used to display notifications.</p>
+                    <p>You can add the desired element inside the <span class="code">li</span> tag to stack it as list item</p>
+                    <div class="component-container-row"> 
+                       <ul class="styled-list stacked-list">
+                           <li>
+                               <a>
+                                    <div class="card card-horizontal-small align-center">
+                                        <div class="badge-container">
+                                            <div class="avatar avatar-xs">
+                                                <img class="img-round img-responsive" src="../components/images/avatar1.jpg" alt="avatar"/>
+                                            </div>
+                                            <span class="status-badge status-badge-online"></span>
+                                        </div> 
+                                        <p> MS Dhoni is live now </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <div class="card card-horizontal-small align-center">
+                                        <div class="badge-container">
+                                            <div class="avatar avatar-xs">
+                                                <img class="img-round img-responsive" src="../components/images/avatar2.jpg" alt="avatar"/>
+                                            </div>
+                                            <span class="status-badge status-badge-online"></span>
+                                        </div> 
+                                        <p> Virat Kohli is live now </p>
+                                    </div>
+                                </a>
+                             </li>
+                             <li>
+                                 <a>
+                                    <div class="card card-horizontal-small align-center">
+                                        <div class="badge-container">
+                                            <div class="avatar avatar-xs">
+                                                <img class="img-round img-responsive" src="../components/images/avatar3.jpg" alt="avatar"/>
+                                            </div>
+                                            <span class="status-badge status-badge-online"></span>
+                                        </div> 
+                                        <p> Rohit Sharma is live now </p>
+                                    </div>
+                                </a>
+                             </li>
+                       </ul>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/yPLnnTnVHCUPkohPtrZf"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>               
+            </section>
+                    
+            <hr class="gutter-vh-xl">
+
+            <!---------------------------------------- Modal section ---------------------------->
+
+            <section id="modal-section">
+                <div class="component-description">
+                    <h2>Modal</h2>
+                    <p>Modals are triggered at a particular action and postioned on the top layer over anything else on the page to display important information and it removes the scroll from the page. User can close it manually.</p>
+                </div>
+                <div class="component-example">
+                    <h5>Example of modal</h5>
+                    <p>You need to have a wrapper div with the class <span class="code">modal-backdrop</span>, inside which you can place your modal div with class <span class="code">modal</span></p>
+                    <p>Below modal is divided into three part: <span class="code">modal-title, modal-content and modal-footer. </span>However, you can add, modify or remove the child components of the modal according to your need. </p>
+                    <div class="component-container-row"> 
+                        <div class="modal">
+                            <div class="modal-title">
+                                <h6>Bleed Blue CSS</h6>
+                                <button id="btn-modal-close-example" type="button" class="btn-close modal-close-icon" role="close modal">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <hr class="gutter-vh-xs">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a dui sagittis, suscipit elit id, rutrum ex. In tincidunt auctor bibendum. Nunc nec pulvinar lorem.  Sed imperdiet, augue sed egestas sodales, libero elit commodo enim, ac faucibus nisl nisl quis ipsum.
+                                </p>
+                                <hr class="gutter-vh-xs">
+                            </div>
+                            <div class="modal-footer flex-row justify-end gap-sm">
+                                <button class="btn btn-primary">OK</button>
+                                <button class="btn btn-danger">CLOSE</button>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/AhI9mvM51yZlnby792KJ"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="component-example">
+                    <h5>Live Demo</h5>
+                    <p>Clicking on the below 'Launch Modal' button will launch the modal and page scroll will be disabled, it can be closed by clicking on the 'CLOSE' button or the close icon on the modal.</p>
+                    <div class="component-container-row"> 
+                        <button id="btn-open-example-modal" class="btn btn-primary">Launch Modal</button>  
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/6wKCEDJndmdv6aQDe1he"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                    <h6>JavaScript</h6>
+                    <p>The action of opening and closing modal is invoked by JavaScript</p>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/GSv3pcvQL05ruVZ7PA9E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+                    
+            <hr class="gutter-vh-xl">
+
+            <!---------------------------------------- Navigation section ---------------------------->
+
+            <section id="navigation-section">
+                <div class="component-description">
+                    <h2>Navigation</h2>
+                    <p>Navigation bar contains the menu items through which you can navigate to different pages and sections of your web application.</p>
+                </div>
+                <div class="component-example">
+                    <h5>Example of Navigation</h5>
+                    <div class="component-container-column"> 
+                        <nav class="navbar light-bg shadow-dark">
+                            <div class="navbar-brand">
+                                <div class="brand-logo">
+                                    <img class="img-responsive" src="/components/images/icon.png"/>
+                                </div>
+                                <h6 class="brand-name">BleedBlue CSS</h6>
+                            </div>
+                            <label class="nav-search-bar flex-row align-middle nogap">
+                                <input type="text" class="nav-search-field" placeholder="Type to search" autocomplete="off"/>
+                                <button class="btn btn-nav-search" type="submit"><i class="fas fa-search"></i></button>
+                            </label>
+                            <ul class="navbar-menu">
+                                <li><a href="https://twitter.com/shahbazkhan_js" class="dark-text" target="_blank"><i class="fab fa-twitter text-md-size"></i></a></li>
+                                <li><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/shahbaz-khan4595/" class="dark-text" target="_blank"><i class="fab fa-linkedin text-md-size"></i></a></li>
+                            </ul>
+                        </nav>  
+                    </div> 
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/taQxcUyY66Z8rzjsZGoL"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+                    
+            <hr class="gutter-vh-xl">
+
+            <!---------------------------------------- Typography section ---------------------------->
+
+            <section id="typography-section">
+                <div class="component-description">
+                    <h2>Typography</h2>
+                    <p>You can write different types of text using the text utilities in different contexts.</p>
+                </div>
+                <div class="component-example">
+                    <h5>Example of Headings</h5>
+                    <p>You can use h1, h2, h3, h4, h5 h6 tags to use headings or you can also style your text like a heading using the corresponding class <span class="code">h1, h2, h3, h4, h5, h6</span></p>
+                    <div class="component-container-column"> 
+                        <div>
+                            <p class="h1">Example of h1 element</p>
+                            <h2>Example of h2 element</h2>
+                            <h3>Example of h3 element</h3>
+                            <h4>Example of h4 element</h4>
+                            <h5>Example of h5 element</h5>
+                            <h6>Example of h6 element</h6>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/wjGzvfp64Rk7vZlKgqpg"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <div class="component-example">
+                    <h5>Example of paragraph</h5>
+                    <p>You can use p tag or add <span class="code">.p</span> class to add a paragraph. Additionaly if you want to change the size of the paragraph text, you can add the corresponsing class 
+                        <span class="code"> text-sm-size, text-rg-size, text-lg-size </span>
+                        and if you want to change the weight of the paragraph text, you can add the correspondig class 
+                        <span class="code">text-light-weight, text-regular-weight, text-bold-weight</span>.</p>
+                    <div class="component-container-column"> 
+                        <div>
+                            <div class="p">Example of paragraph with class</div>
+                            <p>Example of paragraph element</p>
+                            <p class="text-sm-size">Example of small size text</p>
+                            <p class="text-rg-size">Example of regular size text</p>
+                            <p class="text-lg-size">Example of large size text</p>
+                            <p class="text-light-weight">Example of light weight text</p>
+                            <p class="text-regular-weight">Example of regular weight text</p>
+                            <p class="text-bold-weight">Example of bold text</p>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/mi6FWX9hV2sluH6TdafV"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <div class="component-example">
+                    <h5>Example of text alignment</h5>
+                    <p>You can align the text to left, right or center by adding a class like <span class="code">text-left, text-right, text-center </span> to an element with text. </p>
+                    <div class="component-container-column"> 
+                        <div>
+                            <p class="text-left">Example of left aligned text </p>
+                            <p class="text-right">Example of right aligned text </p>
+                            <p class="text-center">Example of center aligned text </p>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/7m0FPknYMgkDhkr9vqD4"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="component-example">
+                    <h5>Other styles on text</h5>
+                    <ul class="styled-list">
+                        <li>You can underline the text by adding a class <span class="code">text-underline</span></li>
+                        <li>You can strike through the text by adding a class <span class="code">text-strike</span></li>
+                        <li>You can change the text color to primary by adding a class <span class="code">primary-text</span></li>
+                        <li>You can change the text color to secondary by adding a class <span class="code">secondary-text</span></li>
+                        <li>You can change the text color to dark by adding a class <span class="code">dark-text</span></li>
+                        <li>You can change the text color to gray by adding a class <span class="code">inactive-text</span></li>
+                        <li>You can change the text color to red by adding a class <span class="code">danger-text</span></li>
+                        <li>You can change the text color to green by adding a class <span class="code">success-text</span></li>
+                    </ul>
+                    <div class="component-container-column"> 
+                        <div>
+                            <p class="text-underline">Example of underlined text </p>
+                            <p class="text-strike">Example of striked through text </p>
+                            <p class="primary-text">Example of primary text </p>
+                            <p class="secondary-text">Example of secondary through text </p>
+                            <p class="dark-text">Example of dark text </p>
+                            <p class="inactive-text">Example of gray text </p>
+                            <p class="danger-text">Example of red text </p>
+                            <p class="success-text">Example of green text </p>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe class="code-frame"
+                            src="https://carbon.now.sh/embed/tQ5WoJVVQjvj11xi0Mxy"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+                    
+            <hr class="gutter-vh-xl">
+
+            
+
 
             <a href="#" class="btn btn-float"><i class="fas fa-arrow-up"></i></a>
             

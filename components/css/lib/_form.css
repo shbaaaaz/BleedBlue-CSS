@@ -7,8 +7,12 @@
 .form-field {
     border: 1px solid var(--bb-inactive-color);
     border-radius: 5px;
-    width: 100%;
+    width: 99%;
     font-size: 1rem;
+}
+
+.form-field:focus {
+    outline-color: var(--bb-secondary-color);
 }
 
 .contact-form, .login-form {
