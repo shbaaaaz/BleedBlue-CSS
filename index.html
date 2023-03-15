@@ -1,98 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="BleedBlue, BleedBlue CSS, Component library, CSS styled components">
-    <meta name="description" content="BleedBlue CSS is an open source UI component library made for building fast, responsive and attractive websites in minutes so that you spend more time on the logic and less on styling.">
-    <meta name="author" content="Shahbaz Khan">
-    <link rel="icon" type="image/x-icon" href="/components/images/favicon.ico">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="index.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BleedBlue CSS is an open source UI component library made for building fast, responsive and attractive websites in minutes so that you spend more time on the logic and less on styling."
+    />
+    <meta name="author" content="Shahbaz Khan" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/components/images/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
     <title>BleedBlue CSS</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="grid-container">
+      <header>
+        <nav class="navbar light-bg shadow-dark">
+          <div class="navbar-brand">
+            <div class="brand-logo">
+              <img class="img-responsive" src="/components/images/icon.png" />
+            </div>
+            <a href="/bleedbluedocs/docs.html" class="dark-text"
+              >Documentation</a
+            >
+          </div>
+          <ul class="navbar-menu">
+            <li>
+              <a
+                href="https://twitter.com/shahbazkhan_js"
+                class="dark-text"
+                target="_blank"
+                ><i class="fab fa-twitter text-md-size"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev"
+                class="dark-text"
+                target="_blank"
+                ><i class="fab fa-github text-md-size"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shahbaz-khan4595/"
+                class="dark-text"
+                target="_blank"
+                ><i class="fab fa-linkedin text-md-size"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <header>
-           <nav class="navbar light-bg shadow-dark">
-                <div class="navbar-brand">
-                    <div class="brand-logo">
-                        <img class="img-responsive" src="/components/images/icon.png"/>
-                    </div>
-                    <a href="/bleedbluedocs/docs.html" class="dark-text">Documentation</a>
-                </div>
-               <ul class="navbar-menu">
-                   <li><a href="https://twitter.com/shahbazkhan_js" class="dark-text" target="_blank"><i class="fab fa-twitter text-md-size"></i></a></li>
-                   <li><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
-                   <li><a href="https://www.linkedin.com/in/shahbaz-khan4595/" class="dark-text" target="_blank"><i class="fab fa-linkedin text-md-size"></i></a></li>
-               </ul>
+      <main>
+        <section class="grid-2">
+          <div class="flex-column align-start justify-even gutter-vh-lg">
+            <h2 class="padder-hz-xl primary-text">Speed up your UI game</h2>
+            <p class="padder-hz-xl gutter-vh-lg">
+              BleedBlue CSS is a UI component library made for building fast,
+              responsive and attractive websites in minutes so that you spend
+              more time on the logic and less on styling.
+            </p>
+            <div class="padder-hz-xl flex-row flex-wrap gap-xs">
+              <a
+                href="#installation-guide"
+                class="btn btn-transparent btn-outline-primary"
+                >Installation</a
+              >
+              <a href="/bleedbluedocs/docs.html" class="btn btn-primary"
+                >Documentation</a
+              >
+            </div>
+          </div>
+          <div class="flex-row align-middle">
+            <img
+              src="/components/images/bleedbluecss.svg"
+              alt="bleed blue"
+              class="image-rg-size"
+            />
+          </div>
+        </section>
 
-           </nav>
-        </header>
+        <section class="grid-3 gutter-vh-xxl">
+          <div class="flex-column align-start">
+            <h5 class="gutter-vh-md padder-hz-xl primary-text">
+              <i class="fas fa-tools"></i> Easy Customization
+            </h5>
+            <p class="padder-hz-xl">
+              BleedBlue CSS is developer friendly and lets you customize your
+              design easily without writing a lot of code.
+            </p>
+          </div>
+          <div class="flex-column align-start">
+            <h5 class="gutter-vh-md padder-hz-xl primary-text">
+              <i class="fas fa-desktop"></i> Responsive Design
+            </h5>
+            <p class="padder-hz-xl">
+              Designed with keeping responsiveness and accessibility in mind so
+              that your website is accessible to everyone on various devices.
+            </p>
+          </div>
+          <div class="flex-column align-start">
+            <h5 class="gutter-vh-md padder-hz-xl primary-text">
+              <i class="far fa-file-alt"></i> Detailed Documentation
+            </h5>
+            <p class="padder-hz-xl">
+              Each and every component is properly documented so that you don't
+              need to mug up in the code.
+            </p>
+          </div>
+        </section>
 
-        <main>
-            <section class="grid-2">
-                <div class="flex-column align-start justify-even gutter-vh-lg">
-                    <h2 class="padder-hz-xl primary-text">Speed up your UI game</h2>
-                    <p  class="padder-hz-xl gutter-vh-lg">BleedBlue CSS is a UI component library made for building fast, responsive and attractive websites in minutes so that you spend more time on the logic and less on styling.</p>
-                    <div  class="padder-hz-xl flex-row flex-wrap gap-xs">
-                        <a href="#installation-guide" class="btn btn-transparent btn-outline-primary">Installation</a>
-                        <a href="/bleedbluedocs/docs.html" class="btn btn-primary">Documentation</a>
-                    </div>
-                </div>
-                <div class="flex-row align-middle">
-                    <img src="/components/images/bleedbluecss.svg" alt="bleed blue" class="image-rg-size"/>
-                </div>
-            </section>
+        <section id="installation-guide" class="grid-2 gutter-vh-xl">
+          <div class="flex-column align-start padder-hz-xl">
+            <h5 class="gutter-vh-sm">Installation guide</h5>
+            <p class="gutter-vh-sm">
+              Just copy and paste the <code class="code">link</code> tag in the
+              <code class="code">head</code> tag of your html document above
+              your custom css and you can start using bleed blue CSS
+            </p>
+            <p class="gutter-vh-sm">
+              View documentation to start using the BleedBlue UI components
+            </p>
+            <a
+              href="/bleedbluedocs/docs.html"
+              class="btn btn-primary gutter-vh-sm"
+              >Documentation</a
+            >
+          </div>
+          <div class="flex-column align-middle gutter-vh-lg">
+            <iframe
+              src="https://carbon.now.sh/embed/Fp5XgR6FERoBvL6UV0Ti"
+              style="
+                width: 100%;
+                height: 200px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <a href="#" class="btn btn-float"><i class="fas fa-arrow-up"></i></a>
+      </main>
 
-
-            <section class="grid-3 gutter-vh-xxl">
-                <div class="flex-column align-start">
-                    <h5 class="gutter-vh-md padder-hz-xl primary-text"><i class="fas fa-tools"></i> Easy Customization</h5>
-                    <p class="padder-hz-xl">BleedBlue CSS is developer friendly and lets you customize your design easily without writing a lot of code.</p>
-                </div>
-                <div class="flex-column align-start">
-                    <h5 class="gutter-vh-md padder-hz-xl primary-text"><i class="fas fa-desktop"></i> Responsive Design</h5>
-                    <p class="padder-hz-xl">Designed with keeping responsiveness and accessibility in mind so that your website is accessible to everyone on various devices.</p>
-                </div>
-                <div class="flex-column align-start">
-                    <h5 class="gutter-vh-md padder-hz-xl primary-text"><i class="far fa-file-alt"></i> Detailed Documentation</h5>
-                    <p class="padder-hz-xl">Each and every component is properly documented so that you don't need to mug up in the code.</p>
-                </div>
-            </section>
-
-            <section id="installation-guide" class="grid-2 gutter-vh-xl">
-                <div class="flex-column align-start padder-hz-xl">
-                    <h5 class="gutter-vh-sm">Installation guide</h5>
-                    <p class="gutter-vh-sm">Just copy and paste the <code class="code">link</code> tag in the <code class="code">head</code> tag of your html document above your custom css and you can start using bleed blue CSS</p>  
-                    <p class="gutter-vh-sm">View documentation to start using the BleedBlue UI components</p>
-                    <a href="/bleedbluedocs/docs.html" class="btn btn-primary gutter-vh-sm">Documentation</a>
-                </div>
-                <div class="flex-column align-middle gutter-vh-lg">
-                    <iframe
-                        src="https://carbon.now.sh/embed/B3RyrYe3WMpUkYBhVQA0"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            </section>
-            <a href="#" class="btn btn-float"><i class="fas fa-arrow-up"></i></a>
-        </main>            
-       
-        <footer class="dark-bg padder-vh-lg flex-column align-middle light-text">
-            <p> Made by Shahbaz Khan </p>
-            <ul class="list-reset gutter-vh-lg">
-                <li class="list-inline"><a href="https://twitter.com/shahbazkhan_js" target="_blank" class="light-text"><i class="fab fa-twitter text-md-size"></i></a></li>
-                <li class="list-inline padder-hz-md"><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" target="_blank" class="light-text"><i class="fab fa-github text-md-size"></i></a></li>
-                <li class="list-inline"><a href="https://www.linkedin.com/in/shahbaz-khan4595/" target="_blank" class="light-text"><i class="fab fa-linkedin text-md-size"></i></a></li>
-            </ul>
-            <p> &copy; BleedBlue CSS </p>
-        </footer>
-
+      <footer class="dark-bg padder-vh-lg flex-column align-middle light-text">
+        <p>Made by Shahbaz Khan</p>
+        <ul class="list-reset gutter-vh-lg">
+          <li class="list-inline">
+            <a
+              href="https://twitter.com/shahbazkhan_js"
+              target="_blank"
+              class="light-text"
+              ><i class="fab fa-twitter text-md-size"></i
+            ></a>
+          </li>
+          <li class="list-inline padder-hz-md">
+            <a
+              href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev"
+              target="_blank"
+              class="light-text"
+              ><i class="fab fa-github text-md-size"></i
+            ></a>
+          </li>
+          <li class="list-inline">
+            <a
+              href="https://www.linkedin.com/in/shahbaz-khan4595/"
+              target="_blank"
+              class="light-text"
+              ><i class="fab fa-linkedin text-md-size"></i
+            ></a>
+          </li>
+        </ul>
+        <p>&copy; BleedBlue CSS</p>
+      </footer>
     </div>
 
     <script src="/bleedbluedocs/docs.js"></script>
-</body>
+  </body>
 </html>
