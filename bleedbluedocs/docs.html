@@ -1,1114 +1,1763 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/components/images/favicon.ico">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="docs.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/components/images/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="docs.css" />
     <title>BleedBlue CSS</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- modal pop up -->
     <div class="modal-backdrop" id="example-modal">
-        <div class="modal">
-            <div class="modal-title">
-                <h6>Bleed Blue CSS</h6>
-                <button id="icon-modal-close-example" type="button" class="btn-close modal-close-icon" role="close modal">&times;</button>
-            </div>
-            <div class="modal-content">
-                <hr class="gutter-vh-xs">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a dui sagittis, suscipit elit id, rutrum ex. In tincidunt auctor bibendum. Nunc nec pulvinar lorem. Sed imperdiet, augue sed egestas sodales, libero elit commodo enim, ac faucibus nisl nisl quis ipsum.
-                </p>
-                <hr class="gutter-vh-xs">
-            </div>
-            <div class="modal-footer flex-row justify-end gap-sm">
-                <button class="btn btn-primary">OK</button>
-                <button id="btn-modal-close-example" class="btn btn-danger">CLOSE</button>
-            </div>
+      <div class="modal">
+        <div class="modal-title">
+          <h6>Bleed Blue CSS</h6>
+          <button
+            id="icon-modal-close-example"
+            type="button"
+            class="btn-close modal-close-icon"
+            role="close modal"
+          >
+            &times;
+          </button>
         </div>
+        <div class="modal-content">
+          <hr class="gutter-vh-xs" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a
+            dui sagittis, suscipit elit id, rutrum ex. In tincidunt auctor
+            bibendum. Nunc nec pulvinar lorem. Sed imperdiet, augue sed egestas
+            sodales, libero elit commodo enim, ac faucibus nisl nisl quis ipsum.
+          </p>
+          <hr class="gutter-vh-xs" />
+        </div>
+        <div class="modal-footer flex-row justify-end gap-sm">
+          <button class="btn btn-primary">OK</button>
+          <button id="btn-modal-close-example" class="btn btn-danger">
+            CLOSE
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="page-layout">
-        <!-- sidebar listing all the components -->
-        <aside class="sidebar shadow-dark">
-            <ul class="sidenav list-reset">
-                <li><h5>Components</h5></li>
-                <li class="sidenav-item"><a href="#alert-section">Alert</a></li>
-                <li class="sidenav-item"><a href="#avatar-section">Avatar</a></li>
-                <li class="sidenav-item"><a href="#badge-section">Badge</a></li>
-                <li class="sidenav-item"><a href="#button-section">Button</a></li>
-                <li class="sidenav-item"><a href="#card-section">Card</a></li>
-                <li class="sidenav-item"><a href="#image-section">Image</a></li>
-                <li class="sidenav-item"><a href="#input-section">Input</a></li>
-                <li class="sidenav-item"><a href="#list-section">List</a></li>
-                <li class="sidenav-item"><a href="#modal-section">Modal</a></li>
-                <li class="sidenav-item"><a href="#navigation-section">Navigation</a></li>
-                <li class="sidenav-item"><a href="#typography-section">Typography</a></li>
-            </ul>
-        </aside>
-
-        <header class="page-header">
-            <nav class="navbar light-bg shadow-dark">
-                <div class="navbar-brand">
-                    <div class="brand-logo">
-                        <img class="img-responsive" src="/components/images/icon.png"/>
-                    </div>
-                    <a href="/index.html" class="dark-text">Home</a>
-                </div>
-                <ul class="navbar-menu">
-                    <li><a href="https://twitter.com/shahbazkhan_js" class="dark-text" target="_blank"><i class="fab fa-twitter text-md-size"></i></a></li>
-                    <li><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/shahbaz-khan4595/" class="dark-text" target="_blank"><i class="fab fa-linkedin text-md-size"></i></a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class="page-content container">
-
-             <!---------------------------------------- Alert section ---------------------------->
-
-            <section id="alert-section">
-                <div class="component-description">
-                    <h2>Alerts</h2>
-                    <h5 class="text-light-weight"> Alerts are used to give status, feedback or information to the users based on certain action performed with a descriptive message. </h5>
-                </div>
-                <!-- Simple alerts -->
-                <div class="component-example">
-                    <h5>Example of simple alerts</h5>
-                    <p>There are 6 types of alerts which can be used based on different contexts.</p>
-                    <p>The five different alerts are : success alert, error alert, warning alert, primary alert, secondary alert, dark alert and light alert.</p>
-                    <p>In order to use the alerts you can just add the class name <span class="code">alert</span> to your text container div and you can add another class based on the type of alert you want to use like <span class="code">alert-primary, alert-sucess, alert-error, alert-warning, alert-dark, alert-light</span>.</p>
-                    <div class="component-container-column">
-                        
-                        <div class="alert alert-primary" role="alert">
-                            Match On 👍🏼
-                        </div>
-
-                        <div class="alert alert-success" role="alert">
-                            Not Out 🙂
-                        </div>
-
-                        <div class="alert alert-error" role="alert">
-                            Ooops! That's out ☹️
-                        </div>
-
-                        <div class="alert alert-warning" role="alert">
-                            Warning! First bouncer.
-                        </div>
-
-                        <div class="alert alert-dark" role="alert">
-                            Blackcaps won.
-                        </div>
-
-                        <div class="alert alert-light" role="alert">
-                            Score level ! <a>Check the scorecard</a>
-                        </div>
-                        
-                    </div>
-
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/wtNBHvGu13g2OzneScLM"
-                            sandbox="allow-scripts allow-same-origin">
-                      </iframe>
-                    </div>
-                </div>
-                <!-- alerts with icons -->
-
-                <div class="component-example">
-                    <h5>Example of alerts with icon</h5>
-                    <p>Alerts can have icon relevant to the alert message to attract user's attention.</p>
-                    
-                    <div class="component-container-column"> 
-                        <div class="alert alert-success" role="alert">
-                            <span><i class="fas fa-check-circle gutter-hz-xs"></i> Not Out 🙂</span>
-                        </div>
-
-                        <div class="alert alert-error" role="alert">
-                            <span><i class="fas fa-times-circle gutter-hz-xs"></i> Ooops! That's out ☹️ </span>
-                        </div>
-
-                        <div class="alert alert-warning" role="alert">
-                            <span><i class="fas fa-exclamation-triangle gutter-hz-xs"></i> Warning! First bouncer. </span>
-                        </div>
-                    </div>
-
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/eplIF3M9Y9mCUZsY4kNh"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                 <!-- alerts with close button -->
-
-                 <div class="component-example">
-                    <h5>Example of alerts with close button</h5>
-                    <p>Alerts can have close button so that the user can close the alert box.</p>
-                    
-                    <div class="component-container-column"> 
-                        <div id="alert-close-example" class="alert alert-success" role="alert">
-                            <span><i class="fas fa-check-circle gutter-hz-xs"></i> Not Out 🙂</span> 
-                            <button id="btn-alert-close-example" type="button" class="btn-close" role="close alert">&times;</button>
-                        </div>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/SMYnN8G4udqQRpeEgUdL"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-
-                    <div>
-                        <h6>JavaScript</h6>
-                        <div class="code-snippet">
-                            <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/rKSbZyu91LBvp51iO17A"
-                            sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
-            <hr class="gutter-vh-xl">
-
-            <!---------------------------------------- Avatar section ---------------------------->
-
-            <section id="avatar-section">
-                <div class="component-description">
-                    <h2>Avatar</h2>
-                    <h5 class="text-light-weight"> Avatars can be used to display user's profile picture on user profile, comments, navigation bar etc. </h5>
-                </div>
-                <!-- Avatar in 5 different sizes -->
-                <div class="component-example">
-                    <h5>Example of simple avatars</h5>
-                    <p>Avatar is avilable in 5 different sizes. You can use a image and add the class <span class="code"> img-responsive </span> and <span class="code"> img-round </span> to make the image round and responsive.</p>
-                    <p>Add class <span class="code"> avatar </span> to the image container div and also add class for the avatar size like <span class="code">avatar-xl, avatar-lg, avatar-md, avatar-sm, avatar-xs</span>.</p>
-                    
-                    <div class="component-container-row">
-                        
-                        <div class="avatar avatar-xl">
-                            <img class="img-round img-responsive" src="../components//images/avatar1.jpg" alt="avatar"/>
-                        </div>
-
-                        <div class="avatar avatar-lg" role="avatar">
-                            <img class="img-round img-responsive" src="../components//images/avatar2.jpg" alt="avatar"/>
-                        </div>
-
-                        <div class="avatar avatar-md" role="avatar">
-                            <img class="img-round img-responsive" src="../components//images/avatar3.jpg" alt="avatar"/>
-                        </div>
-
-                        <div class="avatar avatar-sm" role="avatar">
-                            <img class="img-round img-responsive" src="../components//images/avatar4.jpg" alt="avatar"/>
-                        </div>
-
-                        <div class="avatar avatar-xs" role="avatar">
-                            <img class="img-round img-responsive" src="../components//images/avatar5.jpg" alt="avatar"/>
-                        </div>                        
-
-                    </div>
-
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/uaboHgbLCN9Plz6qnwtG"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-            </section>
-
-            <hr class="gutter-vh-xl">
-
-
-            <!---------------------------------------- Badge section ---------------------------->
-
-            <section id="badge-section">
-                <div class="component-description">
-                    <h2>Badge</h2>
-                    <h5 class="text-light-weight"> Badges are used to display status or notifications. It can be used with text, images, or icons to grab user's attention. </h5>
-                </div>
-                <!-- Basic badge -->
-                <div class="component-example">
-                    <h5>Example of basic badge</h5>
-                    <p> There are 6 variations of basic badges that can be used in different context. </p>
-                    <p>You just need to add a class <span class="code">badge</span> to wrap the text as a basic badge.</p>
-                    <p>You can also add class for different variations of basic badges like <span class="code">badge-primary, badge-green, badge-red, badge-yellow, badge light</span>.</p>
-                    <div class="component-container-row"> 
-                        <div>
-                            <h2>Example of heading with basic badge <span class="badge"> SOLD </span></h2>
-                            <h3>Example of heading with primary badge<span class="badge badge-primary">  TRENDING </span></h3>
-                            <h4>Example of heading with green badge<span class="badge badge-green"> NEW </span></h4>
-                            <h5>Example of heading with red badge<span class="badge badge-red"> SALE </span></h5>
-                            <h6>Example of heading with yellow badge<span class="badge badge-yellow"> BEST-SELLER </span></h6>
-                            <p>Example of paragraph with light badge<span class="badge badge-light"> COMING SOON </span></p>
-                        </div>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/LrIRN4A12UQ8JvYJWTSD"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5>Badge on Avatars</h5>
-                    <p>You can add status badge to an avatar for displaying the status of the user.</p>
-                    <p>Check the code below to add a status badge on your avatar.</p>
-                    <div class="component-container-row">
-                        <div class="badge-container">
-                            <div class="avatar avatar-xl">
-                                <img class="img-round img-responsive" src="../components/images/avatar1.jpg" alt="avatar"/>
-                            </div>
-                            <span class="status-badge status-badge-online"></span>
-                        </div>
-
-                        <div class="badge-container">
-                            <div class="avatar avatar-lg">
-                                <img class="img-round img-responsive" src="../components/images/avatar2.jpg" alt="avatar"/>
-                            </div>
-                            <span class="status-badge status-badge-busy"></span>
-                        </div>
-
-                        <div class="badge-container">
-                            <div class="avatar avatar-md">
-                                <img class="img-round img-responsive" src="../components/images/avatar3.jpg" alt="avatar"/>
-                            </div>
-                            <span class="status-badge status-badge-away"></span>
-                        </div>
-
-                        <div class="badge-container">
-                            <div class="avatar avatar-sm">
-                                <img class="img-round img-responsive" src="../components/images/avatar4.jpg" alt="avatar"/>
-                            </div>
-                            <span class="status-badge status-badge-offline"></span>
-                        </div>
-
-                        <div class="badge-container">
-                            <div class="avatar avatar-xs">
-                                <img class="img-round img-responsive" src="../components/images/avatar5.jpg" alt="avatar"/>
-                            </div>
-                            <span class="status-badge status-badge-online"></span>
-                        </div>
-                    </div>
-
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/XenkkfKwCMqjY6xHvLJc"
-                            sandbox="allow-scripts allow-same-origin">
-                      </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5>Badge on Icons</h5>
-                    <p>Badges can also be used to display the count of notifications, messages or cart items to gran user's attention. </p>
-                    <p>You can check the below code for making a badge icon component.</p>
-                    <div class="component-container-row">
-                        <a class="icon-badge-container">
-                            <i class="fas fa-bell"><span class="icon-badge">9</span></i>    
-                        </a>
-                        <a class="icon-badge-container">
-                            <i class="fas fa-envelope"><span class="icon-badge">10+</span></i>    
-                        </a>
-                        <a class="icon-badge-container">
-                            <i class="fas fa-shopping-cart"><span class="icon-badge">2</span></i>    
-                        </a>    
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/WUCQAothNvNCRNTeGMWw"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-
-            <hr class="gutter-vh-xl">
-           
-
-            <!---------------------------------------- Button section ---------------------------->
-
-            <section id="button-section">
-                <div class="component-description">
-                    <h2>Buttons</h2>
-                    <h5 class="text-light-weight"> Buttons are used to perform actions on user's click. You can use solid buttons, floating buttons, icon button based on different scenarios. </h5>
-                </div>
-                <div class="component-example">
-                    <h5>Example of solid buttons</h5>
-                    <p> There are 5 variations of solid buttons that can be used in different context. </p>
-                    <p> In order to attract user's attention you can use primary button which is also called as call to action. </p>
-                    <div class="component-container-row"> 
-                            <button class="btn btn-primary"> Primary </button>
-                            <button class="btn btn-success"> Success </button>
-                            <button class="btn btn-danger"> Delete </button>
-                            <button class="btn btn-dark"> Dark </button>
-                            <button class="btn btn-light"> Light </button>     
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/ICh9wtGqeDiOiKsK8CQT"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5> Other variants of button </h5>
-                    <p>There are few other variants of button like button with an icon, button with outline, disabled button, floating button, link or icon button.</p>
-                    <p>You can check the below code for adding a button component in your web application based on your need.</p>
-                    <div class="component-container-row">
-                            <button class="btn btn-primary"><span class="padder-hz-xs"><i class="fas fa-save"></i></span>Save</button>
-                            <button class="btn btn-outline-primary"> Primary Button Outline</button>
-                            <button class="btn btn-disabled" disabled><span class="padder-hz-xs">Disabled</button>
-                            <a class="btn btn-float"><i class="fas fa-arrow-up"></i></a>
-                            <a class="btn text-underline"> Link </a>
-                            <a class="btn"><i class="fas fa-bell"></i></a>
-                            <a class="btn"><i class="fas fa-download"></i></a>
-                            <a class="btn"><i class="fas fa-shopping-cart"></i></a>      
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/puNGsnvByDLc8ohjxLOd"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-               
-            </section>
-
-            <hr class="gutter-vh-xl">
-
-            <!---------------------------------------- Card section ---------------------------->
-
-            <section id="card-section">
-                <div class="component-description">
-                    <h2>Cards</h2>
-                    <h5 class="text-light-weight"> Cards are used as a container where related information are stored at one place. There are different types of card which can be used in different scenarios like horizontal card, vertical card, card with badge, card with text overlay, card with close button etc.</h5>
-                </div>
-                <div class="component-example">
-                    <h5>Example of horizontal card</h5>
-                    <p>There are two variants of the horizontal card, one is a basic horizontal card and the second is a horizontal card with badge.</p>
-                    <p>You can check the code below to copy the component in your web page.</p>
-                    <div class="component-container-column"> 
-
-                        <div class="card card-horizontal">
-                            <div class="card-image-horizontal">
-                                <img class="img-responsive" src="../components/images/card images/jersey.jpg" loading="lazy" alt="indian cricket jersey"/>
-                            </div>
-                            <div class="card-description flex-column justify-around">
-                                <div class="gutter-vh-sm">
-                                    <p class="card-title">Indian Cricket Jersey </p>
-                                    <p class="text-rg-size primary-text">by BleedBlue</p>
-                                    <p> <span>Price:</span> 2000 Rs.</p>
-                                    <div>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <p> lorem ipsum dolor sit amet, consectetur adip </p>
-                                <div class="card-cta flex-row flex-wrap gap-lg align-center gutter-vh-sm">
-                                    <a><i class="far fa-heart text-lg-size" title="Add to wishlist"></i></a>
-                                    <button type="button" class="btn btn-primary"><span class="padder-hz-xs"><i class="fas fa-shopping-cart"></i></span>Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card-horizontal">
-                            <div class="card-image-horizontal">
-                                <img class="img-responsive" src="../components/images/card images/jersey.jpg" loading="lazy" alt="indian cricket jersey"/>
-                                <span class="badge badge-red horizontal-card-badge">SALE</span>
-                            </div>
-                            <div class="card-description flex-column justify-around">
-                                <div class="gutter-vh-sm">
-                                    <p class="card-title">Indian Cricket Jersey </p>
-                                    <p class="text-rg-size primary-text">by BleedBlue</p>
-                                    <p> <span>Price:</span> 2000 Rs.</p>
-                                    <div>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <p> lorem ipsum dolor sit amet, consectetur adip </p>
-                                <div class="card-cta flex-row flex-wrap gap-lg align-center gutter-vh-sm">
-                                    <a><i class="far fa-heart text-lg-size" title="Add to wishlist"></i></a>
-                                    <button type="button" class="btn btn-primary"><span class="padder-hz-xs"><i class="fas fa-shopping-cart"></i></span>Add to Cart</button>
-                                </div>
-                            </div>
-                        </div> 
-
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/ihAEnSoG0sk8Z1zxWNLS"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5>Example of small horizontal card</h5>
-                    <p>Small horizontal card can be used to display notifications.</p>
-                    <div class="component-container-row"> 
-                        <div class="card card-horizontal-small align-center">
-                            <div class="badge-container">
-                                <div class="avatar avatar-xs">
-                                    <img class="img-round img-responsive" src="../components/images/avatar5.jpg" alt="avatar"/>
-                                </div>
-                                <span class="status-badge status-badge-online"></span>
-                            </div> 
-                            <p> KL Rahul is live now </p>
-                        </div> 
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                        src="https://carbon.now.sh/embed/lKeqlG6gTGrz5GlcNg8X"
-                        sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-                
-                <div class="component-example">
-                    <h5>Example of Vertical card</h5>
-                    <p>There are three variants of the vertical card. You can check the code below to copy the component in your web page.</p>
-                    <div class="component-container-row vertical-card-container align-center flex-wrap justify-between">
-                        <div class="card card-vertical card-vertical-thin">
-                            <div class="card-image-vertical">
-                                <img class="img-responsive" src="../components/images/card images/pad.jpg" loading="lazy" alt="indian cricket jersey"/>
-                            </div>
-                            <div class="card-description flex-column justify-around padder-hz-sm">
-                                <div>
-                                    <p class="card-title">Batting Pad </p>
-                                    <p class="text-rg-size primary-text">by BleedBlue</p>
-                                    <p> <span>Price:</span> 3000 Rs.</p>
-                                    <div>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <p> lorem ipsum dolor sit amet, consectetur adip </p>
-                                <div class="card-cta flex-row gap-lg align-center justify-between gutter-vh-sm">
-                                    <a><i class="far fa-heart text-lg-size" title="Add to wishlist"></i></a>
-                                    <button class="btn btn-primary"><span class="padder-hz-xs"><i class="fas fa-shopping-cart"></i></span>Add to Cart</button>
-                                </div>
-                            </div>
-                        </div> 
-
-                        <div class="card card-vertical card-vertical-thin">
-                            <div class="card-image-vertical">
-                                <img class="img-responsive" src="../components/images/card images/cap.jpg" loading="lazy" alt="indian cricket jersey"/>
-                            </div>
-                            <div class="card-description flex-column justify-around padder-hz-sm">
-                                <div>
-                                    <p class="card-title">Indian Cricket Cap </p>
-                                    <p class="text-rg-size primary-text">by BleedBlue</p>
-                                    <p> <span>Price:</span> 1000 Rs.</p>
-                                    <div>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <p> lorem ipsum dolor sit amet, consectetur adip </p>
-                                <div class="card-cta flex-row-reverse gap-lg align-center justify-between gutter-vh-sm">
-                                    <a><i class="far fa-heart text-lg-size" title="Add to wishlist"></i></a>
-                                    <button class="btn btn-primary"><span class="padder-hz-xs"><i class="fas fa-shopping-cart"></i></span>Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card card-vertical card-vertical-thin">
-                            <div class="card-image-vertical">
-                                <img class="img-responsive" src="../components/images/card images/bat.jpg" loading="lazy" alt="indian cricket jersey"/>
-                                <span class="badge badge-green vertical-card-badge">NEW</span>
-                            </div>
-                            <div class="card-description flex-column justify-around padder-hz-sm">
-                                <div>
-                                    <p class="card-title"> Kookaburra Bat </p>
-                                    <p class="text-rg-size primary-text">by BleedBlue</p>
-                                    <p> <span>Price:</span> 2500 Rs.</p>
-                                    <div>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <p> lorem ipsum dolor sit amet, consectetur adip </p>
-                                <div class="card-cta flex-row gap-lg align-center justify-between gutter-vh-sm">
-                                    <a><i class="far fa-heart text-lg-size" title="Add to wishlist"></i></a>
-                                    <button class="btn btn-primary"><span class="padder-hz-xs"><i class="fas fa-shopping-cart"></i></span>Add to Cart</button>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-
-                    
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/BmnP0rXaUvy6yhx7G6B1"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5>Example of Card with text overlay and text only card with dismiss button</h5>
-                    <p>Below are two other variants of card one for displaying a card with text overlay and the second is text only card that can be closed by the user.</p>
-                    <p>Check the code below to copy the component in your web page.</p>
-                    <div class="component-container-row vertical-card-container align-center flex-wrap justify-between">
-                            <div class="card card-video-container">
-                                <div class="card-video">
-                                    <div class="card-video-cover">
-                                        <img class="img-responsive" src="../components/images/card images/worldCup.jpg" alt="ICC World Cup 2011 Victory Lap" />
-                                    </div>
-                                    <div class="card-video-caption">
-                                        <a class="video-caption-link">ICC WC 2011 Highlights: India wins the world cup!</a>
-                                    </div>   
-                                </div>
-                            </div>
-
-                            <div class="card card-text">
-                                <h6 class="card-text-title">KL Rahul to lead LSG</h6>
-                                <span class="btn btn-close card-text-close">&times;</span>
-                                <p class="card-text-content">Former KXIP skipper KL Rahul is all set to lead Lucknow Super Giants in IPL 2022...</p>
-                                <div class="card-text-footer">
-                                <a><i class="far fa-heart text-md-size" title="Add to wishlist"></i></a>
-                                <a><i class="far fa-share-square text-md-size" title="share"></i></a>
-                                <a class="btn btn-primary">Read More</a>
-                                <a><i class="fas fa-ellipsis-v"></i></a>
-                               </div>
-                            </div> 
-                    </div>
-
-                    
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/uknccJynchutNBcO9yhy"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-        
-            <hr class="gutter-vh-xl">
-
-            <!---------------------------------------- Image section ---------------------------->
-
-            <section id="image-section">
-                <div class="component-description">
-                    <h2>Image</h2>
-                    <p>Images can be responsive to fit the container height and width and can be customised to be in round shape.</p>
-                </div>
-                <div class="component-example">
-                    <h5>Example of responsive image</h5>
-                    <p>You need to add class <span class="code">img-responsive</span> to the image in order to make the image responsive and fit to its container height and width.</p>
-                    <div class="component-container-row"> 
-                        <img class="img-responsive" src="../components/images/champions.jpg" alt="Example Image"/>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/uL84hlBTeCa1ZUKALjLf"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-                
-                <div class="component-example">
-                    <h5>Example of round image</h5>
-                    <p>You need to add class <span class="code">img-round</span> to the image in order to make the image round shaped. </p>
-                    <div class="component-container-row"> 
-                        <div class="round-image-container">
-                            <img class="img-responsive img-round" src="../components/images/trophy.jpg" alt="Example Image"/>
-                        </div>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/fiFdcNjeGMgNcKCnODlD"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-        
-            <hr class="gutter-vh-xl">
-
-            <!---------------------------------------- Input section ---------------------------->
-
-            <section id="input-section">
-                <div class="component-description">
-                    <h2>Input</h2>
-                    <p>Input fields are used to take user inputs. There are different types of input fields like text field, password field, email field, phone field, textarea field etc.</p>
-                </div>
-                <div class="component-example">
-                    <h5>Example of contact form with input fields and required validations</h5>
-                    <p>Below is a basic contact form example with text field, email field, phone field and textarea field with required validation applied on certain fields.</p>
-                    <p>You can check the code below and copy the form component to add it in your web page.</p>
-                    <div class="component-container-column"> 
-                       <form class="form contact-form">
-                            <input class="form-field" type="text" name="name" placeholder="Name*" required/>
-                            <input class="form-field" type="email" name="email" placeholder="Email*" required/>
-                            <input class="form-field" type="tel" name="phone" placeholder="Phone"/>
-                            <textarea class="form-field" name="message" placeholder="Message" rows="3"></textarea>
-                            <button class="btn btn-primary" type="submit">Submit</button>
-                       </form> 
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/jad589gt7QaKDCPKSrpm"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5>Example of login form with validation and error styling</h5>
-                    <p>Below is an example of login form with custom validation through JavaScript. You can check the code below and copy the component along with the javascript code and integrate it into your web page however, it is advisable to change the field id names according to your usage.</p>
-                    <div class="component-container-column"> 
-                       <form class="form login-form" id="example-login-form">
-                           <div>
-                                <input class="form-field" id="email-example" type="email" name="email" placeholder="Email" required/>
-                                <span id="email-error" class="form-error-message"> Please enter a valid email address</span>
-                            </div>
-                            <div>
-                                <input class="form-field" id="password-example" type="password" name="password" placeholder="Password" minlength="8" required/>
-                                <span id="password-error" class="form-error-message"> Passowrd must be atleast 8 characters long </span>
-                            </div>
-                            <button class="btn btn-primary" type="submit">Log In</button>
-                       </form> 
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                        src="https://carbon.now.sh/embed/jUq1qZpBFO6kXzBWDtOS"
-                        sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    
-                    
-                    </div>
-                    
-                    <h6>JavaScript</h6>
-                    <iframe class="code-frame"
-                        src="https://carbon.now.sh/embed/1EDNUzDXainqdxEcyzT4"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-                            
-            </section>
-                    
-            <hr class="gutter-vh-xl">
-
-            <!---------------------------------------- List section ---------------------------->
-
-            <section id="list-section">
-                <div class="component-description">
-                    <h2>List</h2>
-                    <p>Lists can be used to display a collection of items in ordered or un-ordered manners.</p>
-                </div>
-                <div class="component-example">
-                    <h5>Example of ordered list.</h5>
-                    <p>Below are the different types of ordered list which can be used anywhere in your website where you want to display a collection of items in an ordered manner.</p>
-                    <p>You can check the code below and copy the list component to add it in your web page.</p>
-                    <div class="component-container-row"> 
-                       <ol class="styled-list">
-                           <li>Rohit Sharma in the list</li>
-                           <li>KL Rahul in the list</li>
-                           <li>Virat Kohli in the list</li>
-                       </ol>
-
-                       <ol class="styled-list" reversed>
-                            <li>Rohit Sharma in the reversed list</li>
-                            <li>KL Rahul in the reversed list</li>
-                            <li>Virat Kohli in the reversed list</li>
-                        </ol>
-
-                        <ol class="styled-list list-lower-roman">
-                            <li>Rohit Sharma in a list with lowercase roman</li>
-                            <li>KL Rahul in a list with lowercase roman</li>
-                            <li>Virat Kohli in a list with lowercase roman</li>
-                        </ol>
-
-                        <ol class="styled-list list-upper-roman">
-                            <li>Rohit Sharma in a list with uppercase roman</li>
-                            <li>KL Rahul in a list with uppercase roman</li>
-                            <li>Virat Kohli in a list with uppercase roman</li>
-                        </ol>
-
-                        <ol class="styled-list list-lower-alpha">
-                            <li>Rohit Sharma in a list with lowercase alphabet</li>
-                            <li>KL Rahul in a list with lowercase alphabet</li>
-                            <li>Virat Kohli in a list with lowercase alphabet</li>
-                        </ol>
-
-                        <ol class="styled-list list-upper-alpha">
-                            <li>Rohit Sharma in a list uppercase alphabet</li>
-                            <li>KL Rahul in a list with uppercase alphabet</li>
-                            <li>Virat Kohli in a list with uppercase alphabet</li>
-                        </ol>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/2Iv1qynO0Tn7NMsZj4cs"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5>Example of un-ordered list.</h5>
-                    <p>Below are the examples of un-ordered list which can be used anywhere in your website where you want to display a collection of items in an un-ordered manner.</p>
-                    <p>You can check the code below and copy the list component to add it in your web page.</p>
-                    <div class="component-container-row"> 
-                       <ul class="styled-list">
-                           <li>Rohit Sharma in an un-ordered list with bullet</li>
-                           <li>KL Rahul in an un-ordered list with bullet</li>
-                           <li>Virat Kohli in an un-ordered list with bullet</li>
-                       </ul>
-
-                       <ul class="styled-list list-square">
-                            <li>Rohit Sharma in an un-ordered list with square</li>
-                            <li>KL Rahul in an un-ordered list with square</li>
-                            <li>Virat Kohli in an un-ordered list with square</li>
-                        </ul>
-
-                        <ul class="styled-list list-circle">
-                            <li>Rohit Sharma in an un-ordered list with circle</li>
-                            <li>KL Rahul in an un-ordered list with circle</li>
-                            <li>Virat Kohli in an un-ordered list with circle</li>
-                        </ul>   
-
-                        <ul class="styled-list list-reset">
-                            <li>Rohit Sharma in an un-ordered list with circle</li>
-                            <li>KL Rahul in an un-ordered list with circle</li>
-                            <li>Virat Kohli in an un-ordered list with circle</li>
-                        </ul>
-
-                        <ul class="styled-list list-inline">
-                            <li>Rohit Sharma</li>
-                            <li>KL Rahul</li>
-                            <li>Virat Kohli</li>
-                        </ul>
-
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/JS82FIG4Yxe3ixSIsNNm"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5>Example of stacked list.</h5>
-                    <p>Below is and example of stacked list which can be used to display notifications.</p>
-                    <p>You can add the desired element inside the <span class="code">li</span> tag to stack it as list item</p>
-                    <div class="component-container-row"> 
-                       <ul class="styled-list stacked-list">
-                           <li>
-                               <a>
-                                    <div class="card card-horizontal-small align-center">
-                                        <div class="badge-container">
-                                            <div class="avatar avatar-xs">
-                                                <img class="img-round img-responsive" src="../components/images/avatar1.jpg" alt="avatar"/>
-                                            </div>
-                                            <span class="status-badge status-badge-online"></span>
-                                        </div> 
-                                        <p> MS Dhoni is live now </p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div class="card card-horizontal-small align-center">
-                                        <div class="badge-container">
-                                            <div class="avatar avatar-xs">
-                                                <img class="img-round img-responsive" src="../components/images/avatar2.jpg" alt="avatar"/>
-                                            </div>
-                                            <span class="status-badge status-badge-online"></span>
-                                        </div> 
-                                        <p> Virat Kohli is live now </p>
-                                    </div>
-                                </a>
-                             </li>
-                             <li>
-                                 <a>
-                                    <div class="card card-horizontal-small align-center">
-                                        <div class="badge-container">
-                                            <div class="avatar avatar-xs">
-                                                <img class="img-round img-responsive" src="../components/images/avatar3.jpg" alt="avatar"/>
-                                            </div>
-                                            <span class="status-badge status-badge-online"></span>
-                                        </div> 
-                                        <p> Rohit Sharma is live now </p>
-                                    </div>
-                                </a>
-                             </li>
-                       </ul>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/yPLnnTnVHCUPkohPtrZf"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>               
-            </section>
-                    
-            <hr class="gutter-vh-xl">
-
-            <!---------------------------------------- Modal section ---------------------------->
-
-            <section id="modal-section">
-                <div class="component-description">
-                    <h2>Modal</h2>
-                    <p>Modals are triggered at a particular action and postioned on the top layer over anything else on the page to display important information and it removes the scroll from the page. User can close it manually.</p>
-                </div>
-                <div class="component-example">
-                    <h5>Example of modal</h5>
-                    <p>You need to have a wrapper div with the class <span class="code">modal-backdrop</span>, inside which you can place your modal div with class <span class="code">modal</span></p>
-                    <p>Below modal is divided into three part: <span class="code">modal-title, modal-content and modal-footer. </span>However, you can add, modify or remove the child components of the modal according to your need. </p>
-                    <div class="component-container-row"> 
-                        <div class="modal">
-                            <div class="modal-title">
-                                <h6>Bleed Blue CSS</h6>
-                                <button id="btn-modal-close-example" type="button" class="btn-close modal-close-icon" role="close modal">&times;</button>
-                            </div>
-                            <div class="modal-content">
-                                <hr class="gutter-vh-xs">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a dui sagittis, suscipit elit id, rutrum ex. In tincidunt auctor bibendum. Nunc nec pulvinar lorem.  Sed imperdiet, augue sed egestas sodales, libero elit commodo enim, ac faucibus nisl nisl quis ipsum.
-                                </p>
-                                <hr class="gutter-vh-xs">
-                            </div>
-                            <div class="modal-footer flex-row justify-end gap-sm">
-                                <button class="btn btn-primary">OK</button>
-                                <button class="btn btn-danger">CLOSE</button>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/AhI9mvM51yZlnby792KJ"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5>Live Demo</h5>
-                    <p>Clicking on the below 'Launch Modal' button will launch the modal and page scroll will be disabled, it can be closed by clicking on the 'CLOSE' button or the close icon on the modal.</p>
-                    <div class="component-container-row"> 
-                        <button id="btn-open-example-modal" class="btn btn-primary">Launch Modal</button>  
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/6wKCEDJndmdv6aQDe1he"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                    <h6>JavaScript</h6>
-                    <p>The action of opening and closing modal is invoked by JavaScript</p>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/GSv3pcvQL05ruVZ7PA9E"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-                    
-            <hr class="gutter-vh-xl">
-
-            <!---------------------------------------- Navigation section ---------------------------->
-
-            <section id="navigation-section">
-                <div class="component-description">
-                    <h2>Navigation</h2>
-                    <p>Navigation bar contains the menu items through which you can navigate to different pages and sections of your web application.</p>
-                </div>
-                <div class="component-example">
-                    <h5>Example of Navigation</h5>
-                    <div class="component-container-column"> 
-                        <nav class="navbar light-bg shadow-dark">
-                            <div class="navbar-brand">
-                                <div class="brand-logo">
-                                    <img class="img-responsive" src="/components/images/icon.png"/>
-                                </div>
-                                <h6 class="brand-name">BleedBlue CSS</h6>
-                            </div>
-                            <label class="nav-search-bar flex-row align-middle gap-none">
-                                <input type="text" class="nav-search-field" placeholder="Type to search" autocomplete="off"/>
-                                <button class="btn btn-nav-search" type="submit"><i class="fas fa-search"></i></button>
-                            </label>
-                            <ul class="navbar-menu">
-                                <li><a href="https://twitter.com/shahbazkhan_js" class="dark-text" target="_blank"><i class="fab fa-twitter text-md-size"></i></a></li>
-                                <li><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" class="dark-text" target="_blank"><i class="fab fa-github text-md-size"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/shahbaz-khan4595/" class="dark-text" target="_blank"><i class="fab fa-linkedin text-md-size"></i></a></li>
-                            </ul>
-                        </nav>  
-                    </div> 
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/taQxcUyY66Z8rzjsZGoL"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-                    
-            <hr class="gutter-vh-xl">
-
-            <!---------------------------------------- Typography section ---------------------------->
-
-            <section id="typography-section">
-                <div class="component-description">
-                    <h2>Typography</h2>
-                    <p>You can write different types of text using the text utilities in different contexts.</p>
-                </div>
-                <div class="component-example">
-                    <h5>Example of Headings</h5>
-                    <p>You can use h1, h2, h3, h4, h5 h6 tags to use headings or you can also style your text like a heading using the corresponding class <span class="code">h1, h2, h3, h4, h5, h6</span></p>
-                    <div class="component-container-column"> 
-                        <div>
-                            <p class="h1">Example of h1 element</p>
-                            <h2>Example of h2 element</h2>
-                            <h3>Example of h3 element</h3>
-                            <h4>Example of h4 element</h4>
-                            <h5>Example of h5 element</h5>
-                            <h6>Example of h6 element</h6>
-                        </div>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/wjGzvfp64Rk7vZlKgqpg"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-
-                </div>
-
-                <div class="component-example">
-                    <h5>Example of paragraph</h5>
-                    <p>You can use p tag or add <span class="code">.p</span> class to add a paragraph. Additionaly if you want to change the size of the paragraph text, you can add the corresponsing class 
-                        <span class="code"> text-sm-size, text-rg-size, text-lg-size </span>
-                        and if you want to change the weight of the paragraph text, you can add the correspondig class 
-                        <span class="code">text-light-weight, text-regular-weight, text-bold-weight</span>.</p>
-                    <div class="component-container-column"> 
-                        <div>
-                            <div class="p">Example of paragraph with class</div>
-                            <p>Example of paragraph element</p>
-                            <p class="text-sm-size">Example of small size text</p>
-                            <p class="text-rg-size">Example of regular size text</p>
-                            <p class="text-lg-size">Example of large size text</p>
-                            <p class="text-light-weight">Example of light weight text</p>
-                            <p class="text-regular-weight">Example of regular weight text</p>
-                            <p class="text-bold-weight">Example of bold text</p>
-                        </div>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/mi6FWX9hV2sluH6TdafV"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-
-                </div>
-
-                <div class="component-example">
-                    <h5>Example of text alignment</h5>
-                    <p>You can align the text to left, right or center by adding a class like <span class="code">text-left, text-right, text-center </span> to an element with text. </p>
-                    <div class="component-container-column"> 
-                        <div>
-                            <p class="text-left">Example of left aligned text </p>
-                            <p class="text-right">Example of right aligned text </p>
-                            <p class="text-center">Example of center aligned text </p>
-                        </div>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/7m0FPknYMgkDhkr9vqD4"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="component-example">
-                    <h5>Other styles on text</h5>
-                    <ul class="styled-list">
-                        <li>You can underline the text by adding a class <span class="code">text-underline</span></li>
-                        <li>You can strike through the text by adding a class <span class="code">text-strike</span></li>
-                        <li>You can change the text color to primary by adding a class <span class="code">primary-text</span></li>
-                        <li>You can change the text color to secondary by adding a class <span class="code">secondary-text</span></li>
-                        <li>You can change the text color to dark by adding a class <span class="code">dark-text</span></li>
-                        <li>You can change the text color to gray by adding a class <span class="code">inactive-text</span></li>
-                        <li>You can change the text color to red by adding a class <span class="code">danger-text</span></li>
-                        <li>You can change the text color to green by adding a class <span class="code">success-text</span></li>
-                    </ul>
-                    <div class="component-container-column"> 
-                        <div>
-                            <p class="text-underline">Example of underlined text </p>
-                            <p class="text-strike">Example of striked through text </p>
-                            <p class="primary-text">Example of primary text </p>
-                            <p class="secondary-text">Example of secondary through text </p>
-                            <p class="dark-text">Example of dark text </p>
-                            <p class="inactive-text">Example of gray text </p>
-                            <p class="danger-text">Example of red text </p>
-                            <p class="success-text">Example of green text </p>
-                        </div>
-                    </div>
-                    <div class="code-snippet">
-                        <iframe class="code-frame"
-                            src="https://carbon.now.sh/embed/tQ5WoJVVQjvj11xi0Mxy"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-                    
-            <hr class="gutter-vh-xl">
-
-            
-
-
-            <a href="#" class="btn btn-float"><i class="fas fa-arrow-up"></i></a>
-            
-        </main>            
-       
-        <!-- footer section -->
-
-        <footer class="page-footer">
-            <div class="dark-bg padder-vh-lg flex-column align-middle light-text">
-                <p> Made by Shahbaz Khan </p>
-                <ul class="list-reset gutter-vh-lg">
-                    <li class="list-inline"><a href="https://twitter.com/shahbazkhan_js" target="_blank" class="light-text"><i class="fab fa-twitter text-md-size"></i></a></li>
-                    <li class="list-inline padder-hz-md"><a href="https://github.com/shahbaz4595/BleedBlue-CSS/tree/dev" target="_blank" class="light-text"><i class="fab fa-github text-md-size"></i></a></li>
-                    <li class="list-inline"><a href="https://www.linkedin.com/in/shahbaz-khan4595/" target="_blank" class="light-text"><i class="fab fa-linkedin text-md-size"></i></a></li>
-                </ul>
-                <p> &copy; BleedBlue CSS </p>
+      <!-- sidebar listing all the components -->
+      <aside class="sidebar shadow-dark">
+        <ul class="sidenav list-reset">
+          <li><h5>Components</h5></li>
+          <li class="sidenav-item"><a href="#alert-section">Alert</a></li>
+          <li class="sidenav-item"><a href="#avatar-section">Avatar</a></li>
+          <li class="sidenav-item"><a href="#badge-section">Badge</a></li>
+          <li class="sidenav-item"><a href="#button-section">Button</a></li>
+          <li class="sidenav-item"><a href="#card-section">Card</a></li>
+          <li class="sidenav-item"><a href="#image-section">Image</a></li>
+          <li class="sidenav-item"><a href="#input-section">Input</a></li>
+          <li class="sidenav-item"><a href="#list-section">List</a></li>
+          <li class="sidenav-item"><a href="#modal-section">Modal</a></li>
+          <li class="sidenav-item">
+            <a href="#navigation-section">Navigation</a>
+          </li>
+          <li class="sidenav-item">
+            <a href="#typography-section">Typography</a>
+          </li>
+        </ul>
+      </aside>
+
+      <header class="page-header">
+        <nav class="navbar light-bg shadow-dark">
+          <div class="navbar-brand">
+            <div class="brand-logo">
+              <img class="img-responsive" src="/components/images/icon.png" />
             </div>
-        </footer>
+            <a href="/index.html" class="dark-text">Home</a>
+          </div>
+          <ul class="navbar-menu">
+            <li>
+              <a
+                href="https://twitter.com/shahbazkhan_js"
+                class="dark-text"
+                target="_blank"
+                ><i class="fab fa-twitter text-md-size"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/shahbaz4595/BleedBlue-CSS"
+                class="dark-text"
+                target="_blank"
+                ><i class="fab fa-github text-md-size"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shahbaz-khan4595/"
+                class="dark-text"
+                target="_blank"
+                ><i class="fab fa-linkedin text-md-size"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
+      <main class="page-content container">
+        <!---------------------------------------- Alert section ---------------------------->
+
+        <section id="alert-section">
+          <div class="component-description">
+            <h2>Alerts</h2>
+            <h5 class="text-light-weight">
+              Alerts are used to give status, feedback or information to the
+              users based on certain action performed with a descriptive
+              message.
+            </h5>
+          </div>
+          <!-- Simple alerts -->
+          <div class="component-example">
+            <h5>Example of simple alerts</h5>
+            <p>
+              There are 6 types of alerts which can be used based on different
+              contexts.
+            </p>
+            <p>
+              The five different alerts are : success alert, error alert,
+              warning alert, primary alert, secondary alert, dark alert and
+              light alert.
+            </p>
+            <p>
+              In order to use the alerts you can just add the class name
+              <span class="code">alert</span> to your text container div and you
+              can add another class based on the type of alert you want to use
+              like
+              <span class="code"
+                >alert-primary, alert-sucess, alert-error, alert-warning,
+                alert-dark, alert-light</span
+              >.
+            </p>
+            <div class="component-container-column">
+              <div class="alert alert-primary" role="alert">Match On 👍🏼</div>
+
+              <div class="alert alert-success" role="alert">Not Out 🙂</div>
+
+              <div class="alert alert-error" role="alert">
+                Ooops! That's out ☹️
+              </div>
+
+              <div class="alert alert-warning" role="alert">
+                Warning! First bouncer.
+              </div>
+
+              <div class="alert alert-dark" role="alert">Blackcaps won.</div>
+
+              <div class="alert alert-light" role="alert">
+                Score level ! <a>Check the scorecard</a>
+              </div>
+            </div>
+
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/wtNBHvGu13g2OzneScLM"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <!-- alerts with icons -->
+
+          <div class="component-example">
+            <h5>Example of alerts with icon</h5>
+            <p>
+              Alerts can have icon relevant to the alert message to attract
+              user's attention.
+            </p>
+
+            <div class="component-container-column">
+              <div class="alert alert-success" role="alert">
+                <span
+                  ><i class="fas fa-check-circle gutter-hz-xs"></i> Not Out
+                  🙂</span
+                >
+              </div>
+
+              <div class="alert alert-error" role="alert">
+                <span
+                  ><i class="fas fa-times-circle gutter-hz-xs"></i> Ooops!
+                  That's out ☹️
+                </span>
+              </div>
+
+              <div class="alert alert-warning" role="alert">
+                <span
+                  ><i class="fas fa-exclamation-triangle gutter-hz-xs"></i>
+                  Warning! First bouncer.
+                </span>
+              </div>
+            </div>
+
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/eplIF3M9Y9mCUZsY4kNh"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <!-- alerts with close button -->
+
+          <div class="component-example">
+            <h5>Example of alerts with close button</h5>
+            <p>
+              Alerts can have close button so that the user can close the alert
+              box.
+            </p>
+
+            <div class="component-container-column">
+              <div
+                id="alert-close-example"
+                class="alert alert-success"
+                role="alert"
+              >
+                <span
+                  ><i class="fas fa-check-circle gutter-hz-xs"></i> Not Out
+                  🙂</span
+                >
+                <button
+                  id="btn-alert-close-example"
+                  type="button"
+                  class="btn-close"
+                  role="close alert"
+                >
+                  &times;
+                </button>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/SMYnN8G4udqQRpeEgUdL"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+
+            <div>
+              <h6>JavaScript</h6>
+              <div class="code-snippet">
+                <iframe
+                  class="code-frame"
+                  src="https://carbon.now.sh/embed/rKSbZyu91LBvp51iO17A"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- Avatar section ---------------------------->
+
+        <section id="avatar-section">
+          <div class="component-description">
+            <h2>Avatar</h2>
+            <h5 class="text-light-weight">
+              Avatars can be used to display user's profile picture on user
+              profile, comments, navigation bar etc.
+            </h5>
+          </div>
+          <!-- Avatar in 5 different sizes -->
+          <div class="component-example">
+            <h5>Example of simple avatars</h5>
+            <p>
+              Avatar is avilable in 5 different sizes. You can use a image and
+              add the class <span class="code"> img-responsive </span> and
+              <span class="code"> img-round </span> to make the image round and
+              responsive.
+            </p>
+            <p>
+              Add class <span class="code"> avatar </span> to the image
+              container div and also add class for the avatar size like
+              <span class="code"
+                >avatar-xl, avatar-lg, avatar-md, avatar-sm, avatar-xs</span
+              >.
+            </p>
+
+            <div class="component-container-row">
+              <div class="avatar avatar-xl">
+                <img
+                  class="img-round img-responsive"
+                  src="../components//images/avatar1.jpg"
+                  alt="avatar"
+                />
+              </div>
+
+              <div class="avatar avatar-lg" role="avatar">
+                <img
+                  class="img-round img-responsive"
+                  src="../components//images/avatar2.jpg"
+                  alt="avatar"
+                />
+              </div>
+
+              <div class="avatar avatar-md" role="avatar">
+                <img
+                  class="img-round img-responsive"
+                  src="../components//images/avatar3.jpg"
+                  alt="avatar"
+                />
+              </div>
+
+              <div class="avatar avatar-sm" role="avatar">
+                <img
+                  class="img-round img-responsive"
+                  src="../components//images/avatar4.jpg"
+                  alt="avatar"
+                />
+              </div>
+
+              <div class="avatar avatar-xs" role="avatar">
+                <img
+                  class="img-round img-responsive"
+                  src="../components//images/avatar5.jpg"
+                  alt="avatar"
+                />
+              </div>
+            </div>
+
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/uaboHgbLCN9Plz6qnwtG"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- Badge section ---------------------------->
+
+        <section id="badge-section">
+          <div class="component-description">
+            <h2>Badge</h2>
+            <h5 class="text-light-weight">
+              Badges are used to display status or notifications. It can be used
+              with text, images, or icons to grab user's attention.
+            </h5>
+          </div>
+          <!-- Basic badge -->
+          <div class="component-example">
+            <h5>Example of basic badge</h5>
+            <p>
+              There are 6 variations of basic badges that can be used in
+              different context.
+            </p>
+            <p>
+              You just need to add a class <span class="code">badge</span> to
+              wrap the text as a basic badge.
+            </p>
+            <p>
+              You can also add class for different variations of basic badges
+              like
+              <span class="code"
+                >badge-primary, badge-green, badge-red, badge-yellow, badge
+                light</span
+              >.
+            </p>
+            <div class="component-container-row">
+              <div>
+                <h2>
+                  Example of heading with basic badge
+                  <span class="badge"> SOLD </span>
+                </h2>
+                <h3>
+                  Example of heading with primary badge<span
+                    class="badge badge-primary"
+                  >
+                    TRENDING
+                  </span>
+                </h3>
+                <h4>
+                  Example of heading with green badge<span
+                    class="badge badge-green"
+                  >
+                    NEW
+                  </span>
+                </h4>
+                <h5>
+                  Example of heading with red badge<span
+                    class="badge badge-red"
+                  >
+                    SALE
+                  </span>
+                </h5>
+                <h6>
+                  Example of heading with yellow badge<span
+                    class="badge badge-yellow"
+                  >
+                    BEST-SELLER
+                  </span>
+                </h6>
+                <p>
+                  Example of paragraph with light badge<span
+                    class="badge badge-light"
+                  >
+                    COMING SOON
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/LrIRN4A12UQ8JvYJWTSD"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Badge on Avatars</h5>
+            <p>
+              You can add status badge to an avatar for displaying the status of
+              the user.
+            </p>
+            <p>Check the code below to add a status badge on your avatar.</p>
+            <div class="component-container-row">
+              <div class="badge-container">
+                <div class="avatar avatar-xl">
+                  <img
+                    class="img-round img-responsive"
+                    src="../components/images/avatar1.jpg"
+                    alt="avatar"
+                  />
+                </div>
+                <span class="status-badge status-badge-online"></span>
+              </div>
+
+              <div class="badge-container">
+                <div class="avatar avatar-lg">
+                  <img
+                    class="img-round img-responsive"
+                    src="../components/images/avatar2.jpg"
+                    alt="avatar"
+                  />
+                </div>
+                <span class="status-badge status-badge-busy"></span>
+              </div>
+
+              <div class="badge-container">
+                <div class="avatar avatar-md">
+                  <img
+                    class="img-round img-responsive"
+                    src="../components/images/avatar3.jpg"
+                    alt="avatar"
+                  />
+                </div>
+                <span class="status-badge status-badge-away"></span>
+              </div>
+
+              <div class="badge-container">
+                <div class="avatar avatar-sm">
+                  <img
+                    class="img-round img-responsive"
+                    src="../components/images/avatar4.jpg"
+                    alt="avatar"
+                  />
+                </div>
+                <span class="status-badge status-badge-offline"></span>
+              </div>
+
+              <div class="badge-container">
+                <div class="avatar avatar-xs">
+                  <img
+                    class="img-round img-responsive"
+                    src="../components/images/avatar5.jpg"
+                    alt="avatar"
+                  />
+                </div>
+                <span class="status-badge status-badge-online"></span>
+              </div>
+            </div>
+
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/XenkkfKwCMqjY6xHvLJc"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Badge on Icons</h5>
+            <p>
+              Badges can also be used to display the count of notifications,
+              messages or cart items to gran user's attention.
+            </p>
+            <p>
+              You can check the below code for making a badge icon component.
+            </p>
+            <div class="component-container-row">
+              <a class="icon-badge-container">
+                <i class="fas fa-bell"><span class="icon-badge">9</span></i>
+              </a>
+              <a class="icon-badge-container">
+                <i class="fas fa-envelope"
+                  ><span class="icon-badge">10+</span></i
+                >
+              </a>
+              <a class="icon-badge-container">
+                <i class="fas fa-shopping-cart"
+                  ><span class="icon-badge">2</span></i
+                >
+              </a>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/WUCQAothNvNCRNTeGMWw"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- Button section ---------------------------->
+
+        <section id="button-section">
+          <div class="component-description">
+            <h2>Buttons</h2>
+            <h5 class="text-light-weight">
+              Buttons are used to perform actions on user's click. You can use
+              solid buttons, floating buttons, icon button based on different
+              scenarios.
+            </h5>
+          </div>
+          <div class="component-example">
+            <h5>Example of solid buttons</h5>
+            <p>
+              There are 5 variations of solid buttons that can be used in
+              different context.
+            </p>
+            <p>
+              In order to attract user's attention you can use primary button
+              which is also called as call to action.
+            </p>
+            <div class="component-container-row">
+              <button class="btn btn-primary">Primary</button>
+              <button class="btn btn-success">Success</button>
+              <button class="btn btn-danger">Delete</button>
+              <button class="btn btn-dark">Dark</button>
+              <button class="btn btn-light">Light</button>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/ICh9wtGqeDiOiKsK8CQT"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Other variants of button</h5>
+            <p>
+              There are few other variants of button like button with an icon,
+              button with outline, disabled button, floating button, link or
+              icon button.
+            </p>
+            <p>
+              You can check the below code for adding a button component in your
+              web application based on your need.
+            </p>
+            <div class="component-container-row">
+              <button class="btn btn-primary">
+                <span class="padder-hz-xs"><i class="fas fa-save"></i></span
+                >Save
+              </button>
+              <button class="btn btn-outline-primary">
+                Primary Button Outline
+              </button>
+              <button class="btn btn-disabled" disabled>
+                <span class="padder-hz-xs">Disabled</span>
+              </button>
+              <a class="btn btn-float"><i class="fas fa-arrow-up"></i></a>
+              <a class="btn text-underline"> Link </a>
+              <a class="btn"><i class="fas fa-bell"></i></a>
+              <a class="btn"><i class="fas fa-download"></i></a>
+              <a class="btn"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/puNGsnvByDLc8ohjxLOd"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- Card section ---------------------------->
+
+        <section id="card-section">
+          <div class="component-description">
+            <h2>Cards</h2>
+            <h5 class="text-light-weight">
+              Cards are used as a container where related information are stored
+              at one place. There are different types of card which can be used
+              in different scenarios like horizontal card, vertical card, card
+              with badge, card with text overlay, card with close button etc.
+            </h5>
+          </div>
+          <div class="component-example">
+            <h5>Example of horizontal card</h5>
+            <p>
+              There are two variants of the horizontal card, one is a basic
+              horizontal card and the second is a horizontal card with badge.
+            </p>
+            <p>
+              You can check the code below to copy the component in your web
+              page.
+            </p>
+            <div class="component-container-column">
+              <div class="card card-horizontal">
+                <div class="card-image-horizontal">
+                  <img
+                    class="img-responsive"
+                    src="../components/images/card images/jersey.jpg"
+                    loading="lazy"
+                    alt="indian cricket jersey"
+                  />
+                </div>
+                <div class="card-description flex-column justify-around">
+                  <div class="gutter-vh-sm">
+                    <p class="card-title">Indian Cricket Jersey</p>
+                    <p class="text-rg-size primary-text">by BleedBlue</p>
+                    <p><span>Price:</span> 2000 Rs.</p>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consectetur adip</p>
+                  <div
+                    class="card-cta flex-row flex-wrap gap-lg align-center gutter-vh-sm"
+                  >
+                    <a
+                      ><i
+                        class="far fa-heart text-lg-size"
+                        title="Add to wishlist"
+                      ></i
+                    ></a>
+                    <button type="button" class="btn btn-primary">
+                      <span class="padder-hz-xs"
+                        ><i class="fas fa-shopping-cart"></i></span
+                      >Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-horizontal">
+                <div class="card-image-horizontal">
+                  <img
+                    class="img-responsive"
+                    src="../components/images/card images/jersey.jpg"
+                    loading="lazy"
+                    alt="indian cricket jersey"
+                  />
+                  <span class="badge badge-red horizontal-card-badge"
+                    >SALE</span
+                  >
+                </div>
+                <div class="card-description flex-column justify-around">
+                  <div class="gutter-vh-sm">
+                    <p class="card-title">Indian Cricket Jersey</p>
+                    <p class="text-rg-size primary-text">by BleedBlue</p>
+                    <p><span>Price:</span> 2000 Rs.</p>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consectetur adip</p>
+                  <div
+                    class="card-cta flex-row flex-wrap gap-lg align-center gutter-vh-sm"
+                  >
+                    <a
+                      ><i
+                        class="far fa-heart text-lg-size"
+                        title="Add to wishlist"
+                      ></i
+                    ></a>
+                    <button type="button" class="btn btn-primary">
+                      <span class="padder-hz-xs"
+                        ><i class="fas fa-shopping-cart"></i></span
+                      >Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/ihAEnSoG0sk8Z1zxWNLS"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Example of small horizontal card</h5>
+            <p>Small horizontal card can be used to display notifications.</p>
+            <div class="component-container-row">
+              <div class="card card-horizontal-small align-center">
+                <div class="badge-container">
+                  <div class="avatar avatar-xs">
+                    <img
+                      class="img-round img-responsive"
+                      src="../components/images/avatar5.jpg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <span class="status-badge status-badge-online"></span>
+                </div>
+                <p>KL Rahul is live now</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/lKeqlG6gTGrz5GlcNg8X"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Example of Vertical card</h5>
+            <p>
+              There are three variants of the vertical card. You can check the
+              code below to copy the component in your web page.
+            </p>
+            <div
+              class="component-container-row vertical-card-container align-center flex-wrap justify-between"
+            >
+              <div class="card card-vertical card-vertical-thin">
+                <div class="card-image-vertical">
+                  <img
+                    class="img-responsive"
+                    src="../components/images/card images/pad.jpg"
+                    loading="lazy"
+                    alt="indian cricket jersey"
+                  />
+                </div>
+                <div
+                  class="card-description flex-column justify-around padder-hz-sm"
+                >
+                  <div>
+                    <p class="card-title">Batting Pad</p>
+                    <p class="text-rg-size primary-text">by BleedBlue</p>
+                    <p><span>Price:</span> 3000 Rs.</p>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consectetur adip</p>
+                  <div
+                    class="card-cta flex-row gap-lg align-center justify-between gutter-vh-sm"
+                  >
+                    <a
+                      ><i
+                        class="far fa-heart text-lg-size"
+                        title="Add to wishlist"
+                      ></i
+                    ></a>
+                    <button class="btn btn-primary">
+                      <span class="padder-hz-xs"
+                        ><i class="fas fa-shopping-cart"></i></span
+                      >Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-vertical card-vertical-thin">
+                <div class="card-image-vertical">
+                  <img
+                    class="img-responsive"
+                    src="../components/images/card images/cap.jpg"
+                    loading="lazy"
+                    alt="indian cricket jersey"
+                  />
+                </div>
+                <div
+                  class="card-description flex-column justify-around padder-hz-sm"
+                >
+                  <div>
+                    <p class="card-title">Indian Cricket Cap</p>
+                    <p class="text-rg-size primary-text">by BleedBlue</p>
+                    <p><span>Price:</span> 1000 Rs.</p>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consectetur adip</p>
+                  <div
+                    class="card-cta flex-row-reverse gap-lg align-center justify-between gutter-vh-sm"
+                  >
+                    <a
+                      ><i
+                        class="far fa-heart text-lg-size"
+                        title="Add to wishlist"
+                      ></i
+                    ></a>
+                    <button class="btn btn-primary">
+                      <span class="padder-hz-xs"
+                        ><i class="fas fa-shopping-cart"></i></span
+                      >Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-vertical card-vertical-thin">
+                <div class="card-image-vertical">
+                  <img
+                    class="img-responsive"
+                    src="../components/images/card images/bat.jpg"
+                    loading="lazy"
+                    alt="indian cricket jersey"
+                  />
+                  <span class="badge badge-green vertical-card-badge">NEW</span>
+                </div>
+                <div
+                  class="card-description flex-column justify-around padder-hz-sm"
+                >
+                  <div>
+                    <p class="card-title">Kookaburra Bat</p>
+                    <p class="text-rg-size primary-text">by BleedBlue</p>
+                    <p><span>Price:</span> 2500 Rs.</p>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consectetur adip</p>
+                  <div
+                    class="card-cta flex-row gap-lg align-center justify-between gutter-vh-sm"
+                  >
+                    <a
+                      ><i
+                        class="far fa-heart text-lg-size"
+                        title="Add to wishlist"
+                      ></i
+                    ></a>
+                    <button class="btn btn-primary">
+                      <span class="padder-hz-xs"
+                        ><i class="fas fa-shopping-cart"></i></span
+                      >Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/BmnP0rXaUvy6yhx7G6B1"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>
+              Example of Card with text overlay and text only card with dismiss
+              button
+            </h5>
+            <p>
+              Below are two other variants of card one for displaying a card
+              with text overlay and the second is text only card that can be
+              closed by the user.
+            </p>
+            <p>Check the code below to copy the component in your web page.</p>
+            <div
+              class="component-container-row vertical-card-container align-center flex-wrap justify-between"
+            >
+              <div class="card card-video-container">
+                <div class="card-video">
+                  <div class="card-video-cover">
+                    <img
+                      class="img-responsive"
+                      src="../components/images/card images/worldCup.jpg"
+                      alt="ICC World Cup 2011 Victory Lap"
+                    />
+                  </div>
+                  <div class="card-video-caption">
+                    <a class="video-caption-link"
+                      >ICC WC 2011 Highlights: India wins the world cup!</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-text">
+                <h6 class="card-text-title">KL Rahul to lead LSG</h6>
+                <span class="btn btn-close card-text-close">&times;</span>
+                <p class="card-text-content">
+                  Former KXIP skipper KL Rahul is all set to lead Lucknow Super
+                  Giants in IPL 2022...
+                </p>
+                <div class="card-text-footer">
+                  <a
+                    ><i
+                      class="far fa-heart text-md-size"
+                      title="Add to wishlist"
+                    ></i
+                  ></a>
+                  <a
+                    ><i
+                      class="far fa-share-square text-md-size"
+                      title="share"
+                    ></i
+                  ></a>
+                  <a class="btn btn-primary">Read More</a>
+                  <a><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/uknccJynchutNBcO9yhy"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- Image section ---------------------------->
+
+        <section id="image-section">
+          <div class="component-description">
+            <h2>Image</h2>
+            <p>
+              Images can be responsive to fit the container height and width and
+              can be customised to be in round shape.
+            </p>
+          </div>
+          <div class="component-example">
+            <h5>Example of responsive image</h5>
+            <p>
+              You need to add class <span class="code">img-responsive</span> to
+              the image in order to make the image responsive and fit to its
+              container height and width.
+            </p>
+            <div class="component-container-row">
+              <img
+                class="img-responsive"
+                src="../components/images/champions.jpg"
+                alt="Example Image"
+              />
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/uL84hlBTeCa1ZUKALjLf"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Example of round image</h5>
+            <p>
+              You need to add class <span class="code">img-round</span> to the
+              image in order to make the image round shaped.
+            </p>
+            <div class="component-container-row">
+              <div class="round-image-container">
+                <img
+                  class="img-responsive img-round"
+                  src="../components/images/trophy.jpg"
+                  alt="Example Image"
+                />
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/fiFdcNjeGMgNcKCnODlD"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- Input section ---------------------------->
+
+        <section id="input-section">
+          <div class="component-description">
+            <h2>Input</h2>
+            <p>
+              Input fields are used to take user inputs. There are different
+              types of input fields like text field, password field, email
+              field, phone field, textarea field etc.
+            </p>
+          </div>
+          <div class="component-example">
+            <h5>
+              Example of contact form with input fields and required validations
+            </h5>
+            <p>
+              Below is a basic contact form example with text field, email
+              field, phone field and textarea field with required validation
+              applied on certain fields.
+            </p>
+            <p>
+              You can check the code below and copy the form component to add it
+              in your web page.
+            </p>
+            <div class="component-container-column">
+              <form class="form contact-form">
+                <input
+                  class="form-field"
+                  type="text"
+                  name="name"
+                  placeholder="Name*"
+                  required
+                />
+                <input
+                  class="form-field"
+                  type="email"
+                  name="email"
+                  placeholder="Email*"
+                  required
+                />
+                <input
+                  class="form-field"
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                />
+                <textarea
+                  class="form-field"
+                  name="message"
+                  placeholder="Message"
+                  rows="3"
+                ></textarea>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/jad589gt7QaKDCPKSrpm"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Example of login form with validation and error styling</h5>
+            <p>
+              Below is an example of login form with custom validation through
+              JavaScript. You can check the code below and copy the component
+              along with the javascript code and integrate it into your web page
+              however, it is advisable to change the field id names according to
+              your usage.
+            </p>
+            <div class="component-container-column">
+              <form class="form login-form" id="example-login-form">
+                <div>
+                  <input
+                    class="form-field"
+                    id="email-example"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <span id="email-error" class="form-error-message">
+                    Please enter a valid email address</span
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-field"
+                    id="password-example"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    minlength="8"
+                    required
+                  />
+                  <span id="password-error" class="form-error-message">
+                    Passowrd must be atleast 8 characters long
+                  </span>
+                </div>
+                <button class="btn btn-primary" type="submit">Log In</button>
+              </form>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/jUq1qZpBFO6kXzBWDtOS"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+
+            <h6>JavaScript</h6>
+            <iframe
+              class="code-frame"
+              src="https://carbon.now.sh/embed/1EDNUzDXainqdxEcyzT4"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- List section ---------------------------->
+
+        <section id="list-section">
+          <div class="component-description">
+            <h2>List</h2>
+            <p>
+              Lists can be used to display a collection of items in ordered or
+              un-ordered manners.
+            </p>
+          </div>
+          <div class="component-example">
+            <h5>Example of ordered list.</h5>
+            <p>
+              Below are the different types of ordered list which can be used
+              anywhere in your website where you want to display a collection of
+              items in an ordered manner.
+            </p>
+            <p>
+              You can check the code below and copy the list component to add it
+              in your web page.
+            </p>
+            <div class="component-container-row">
+              <ol class="styled-list">
+                <li>Rohit Sharma in the list</li>
+                <li>KL Rahul in the list</li>
+                <li>Virat Kohli in the list</li>
+              </ol>
+
+              <ol class="styled-list" reversed>
+                <li>Rohit Sharma in the reversed list</li>
+                <li>KL Rahul in the reversed list</li>
+                <li>Virat Kohli in the reversed list</li>
+              </ol>
+
+              <ol class="styled-list list-lower-roman">
+                <li>Rohit Sharma in a list with lowercase roman</li>
+                <li>KL Rahul in a list with lowercase roman</li>
+                <li>Virat Kohli in a list with lowercase roman</li>
+              </ol>
+
+              <ol class="styled-list list-upper-roman">
+                <li>Rohit Sharma in a list with uppercase roman</li>
+                <li>KL Rahul in a list with uppercase roman</li>
+                <li>Virat Kohli in a list with uppercase roman</li>
+              </ol>
+
+              <ol class="styled-list list-lower-alpha">
+                <li>Rohit Sharma in a list with lowercase alphabet</li>
+                <li>KL Rahul in a list with lowercase alphabet</li>
+                <li>Virat Kohli in a list with lowercase alphabet</li>
+              </ol>
+
+              <ol class="styled-list list-upper-alpha">
+                <li>Rohit Sharma in a list uppercase alphabet</li>
+                <li>KL Rahul in a list with uppercase alphabet</li>
+                <li>Virat Kohli in a list with uppercase alphabet</li>
+              </ol>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/2Iv1qynO0Tn7NMsZj4cs"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Example of un-ordered list.</h5>
+            <p>
+              Below are the examples of un-ordered list which can be used
+              anywhere in your website where you want to display a collection of
+              items in an un-ordered manner.
+            </p>
+            <p>
+              You can check the code below and copy the list component to add it
+              in your web page.
+            </p>
+            <div class="component-container-row">
+              <ul class="styled-list">
+                <li>Rohit Sharma in an un-ordered list with bullet</li>
+                <li>KL Rahul in an un-ordered list with bullet</li>
+                <li>Virat Kohli in an un-ordered list with bullet</li>
+              </ul>
+
+              <ul class="styled-list list-square">
+                <li>Rohit Sharma in an un-ordered list with square</li>
+                <li>KL Rahul in an un-ordered list with square</li>
+                <li>Virat Kohli in an un-ordered list with square</li>
+              </ul>
+
+              <ul class="styled-list list-circle">
+                <li>Rohit Sharma in an un-ordered list with circle</li>
+                <li>KL Rahul in an un-ordered list with circle</li>
+                <li>Virat Kohli in an un-ordered list with circle</li>
+              </ul>
+
+              <ul class="styled-list list-reset">
+                <li>Rohit Sharma in an un-ordered list with circle</li>
+                <li>KL Rahul in an un-ordered list with circle</li>
+                <li>Virat Kohli in an un-ordered list with circle</li>
+              </ul>
+
+              <ul class="styled-list list-inline">
+                <li>Rohit Sharma</li>
+                <li>KL Rahul</li>
+                <li>Virat Kohli</li>
+              </ul>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/JS82FIG4Yxe3ixSIsNNm"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Example of stacked list.</h5>
+            <p>
+              Below is and example of stacked list which can be used to display
+              notifications.
+            </p>
+            <p>
+              You can add the desired element inside the
+              <span class="code">li</span> tag to stack it as list item
+            </p>
+            <div class="component-container-row">
+              <ul class="styled-list stacked-list">
+                <li>
+                  <a>
+                    <div class="card card-horizontal-small align-center">
+                      <div class="badge-container">
+                        <div class="avatar avatar-xs">
+                          <img
+                            class="img-round img-responsive"
+                            src="../components/images/avatar1.jpg"
+                            alt="avatar"
+                          />
+                        </div>
+                        <span class="status-badge status-badge-online"></span>
+                      </div>
+                      <p>MS Dhoni is live now</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <div class="card card-horizontal-small align-center">
+                      <div class="badge-container">
+                        <div class="avatar avatar-xs">
+                          <img
+                            class="img-round img-responsive"
+                            src="../components/images/avatar2.jpg"
+                            alt="avatar"
+                          />
+                        </div>
+                        <span class="status-badge status-badge-online"></span>
+                      </div>
+                      <p>Virat Kohli is live now</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <div class="card card-horizontal-small align-center">
+                      <div class="badge-container">
+                        <div class="avatar avatar-xs">
+                          <img
+                            class="img-round img-responsive"
+                            src="../components/images/avatar3.jpg"
+                            alt="avatar"
+                          />
+                        </div>
+                        <span class="status-badge status-badge-online"></span>
+                      </div>
+                      <p>Rohit Sharma is live now</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/yPLnnTnVHCUPkohPtrZf"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- Modal section ---------------------------->
+
+        <section id="modal-section">
+          <div class="component-description">
+            <h2>Modal</h2>
+            <p>
+              Modals are triggered at a particular action and postioned on the
+              top layer over anything else on the page to display important
+              information and it removes the scroll from the page. User can
+              close it manually.
+            </p>
+          </div>
+          <div class="component-example">
+            <h5>Example of modal</h5>
+            <p>
+              You need to have a wrapper div with the class
+              <span class="code">modal-backdrop</span>, inside which you can
+              place your modal div with class <span class="code">modal</span>
+            </p>
+            <p>
+              Below modal is divided into three part:
+              <span class="code"
+                >modal-title, modal-content and modal-footer. </span
+              >However, you can add, modify or remove the child components of
+              the modal according to your need.
+            </p>
+            <div class="component-container-row">
+              <div class="modal">
+                <div class="modal-title">
+                  <h6>Bleed Blue CSS</h6>
+                  <button
+                    id="btn-modal-close-example"
+                    type="button"
+                    class="btn-close modal-close-icon"
+                    role="close modal"
+                  >
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-content">
+                  <hr class="gutter-vh-xs" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent a dui sagittis, suscipit elit id, rutrum ex. In
+                    tincidunt auctor bibendum. Nunc nec pulvinar lorem. Sed
+                    imperdiet, augue sed egestas sodales, libero elit commodo
+                    enim, ac faucibus nisl nisl quis ipsum.
+                  </p>
+                  <hr class="gutter-vh-xs" />
+                </div>
+                <div class="modal-footer flex-row justify-end gap-sm">
+                  <button class="btn btn-primary">OK</button>
+                  <button class="btn btn-danger">CLOSE</button>
+                </div>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/AhI9mvM51yZlnby792KJ"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Live Demo</h5>
+            <p>
+              Clicking on the below 'Launch Modal' button will launch the modal
+              and page scroll will be disabled, it can be closed by clicking on
+              the 'CLOSE' button or the close icon on the modal.
+            </p>
+            <div class="component-container-row">
+              <button id="btn-open-example-modal" class="btn btn-primary">
+                Launch Modal
+              </button>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/6wKCEDJndmdv6aQDe1he"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h6>JavaScript</h6>
+            <p>
+              The action of opening and closing modal is invoked by JavaScript
+            </p>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/GSv3pcvQL05ruVZ7PA9E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- Navigation section ---------------------------->
+
+        <section id="navigation-section">
+          <div class="component-description">
+            <h2>Navigation</h2>
+            <p>
+              Navigation bar contains the menu items through which you can
+              navigate to different pages and sections of your web application.
+            </p>
+          </div>
+          <div class="component-example">
+            <h5>Example of Navigation</h5>
+            <div class="component-container-column">
+              <nav class="navbar light-bg shadow-dark">
+                <div class="navbar-brand">
+                  <div class="brand-logo">
+                    <img
+                      class="img-responsive"
+                      src="/components/images/icon.png"
+                    />
+                  </div>
+                  <h6 class="brand-name">BleedBlue CSS</h6>
+                </div>
+                <label class="nav-search-bar flex-row align-middle gap-none">
+                  <input
+                    type="text"
+                    class="nav-search-field"
+                    placeholder="Type to search"
+                    autocomplete="off"
+                  />
+                  <button class="btn btn-nav-search" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </label>
+                <ul class="navbar-menu">
+                  <li>
+                    <a
+                      href="https://twitter.com/shahbazkhan_js"
+                      class="dark-text"
+                      target="_blank"
+                      ><i class="fab fa-twitter text-md-size"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/shahbaz4595/BleedBlue-CSS"
+                      class="dark-text"
+                      target="_blank"
+                      ><i class="fab fa-github text-md-size"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/shahbaz-khan4595/"
+                      class="dark-text"
+                      target="_blank"
+                      ><i class="fab fa-linkedin text-md-size"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/taQxcUyY66Z8rzjsZGoL"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <!---------------------------------------- Typography section ---------------------------->
+
+        <section id="typography-section">
+          <div class="component-description">
+            <h2>Typography</h2>
+            <p>
+              You can write different types of text using the text utilities in
+              different contexts.
+            </p>
+          </div>
+          <div class="component-example">
+            <h5>Example of Headings</h5>
+            <p>
+              You can use h1, h2, h3, h4, h5 h6 tags to use headings or you can
+              also style your text like a heading using the corresponding class
+              <span class="code">h1, h2, h3, h4, h5, h6</span>
+            </p>
+            <div class="component-container-column">
+              <div>
+                <p class="h1">Example of h1 element</p>
+                <h2>Example of h2 element</h2>
+                <h3>Example of h3 element</h3>
+                <h4>Example of h4 element</h4>
+                <h5>Example of h5 element</h5>
+                <h6>Example of h6 element</h6>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/wjGzvfp64Rk7vZlKgqpg"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Example of paragraph</h5>
+            <p>
+              You can use p tag or add <span class="code">.p</span> class to add
+              a paragraph. Additionaly if you want to change the size of the
+              paragraph text, you can add the corresponsing class
+              <span class="code">
+                text-sm-size, text-rg-size, text-lg-size
+              </span>
+              and if you want to change the weight of the paragraph text, you
+              can add the correspondig class
+              <span class="code"
+                >text-light-weight, text-regular-weight, text-bold-weight</span
+              >.
+            </p>
+            <div class="component-container-column">
+              <div>
+                <div class="p">Example of paragraph with class</div>
+                <p>Example of paragraph element</p>
+                <p class="text-sm-size">Example of small size text</p>
+                <p class="text-rg-size">Example of regular size text</p>
+                <p class="text-lg-size">Example of large size text</p>
+                <p class="text-light-weight">Example of light weight text</p>
+                <p class="text-regular-weight">
+                  Example of regular weight text
+                </p>
+                <p class="text-bold-weight">Example of bold text</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/mi6FWX9hV2sluH6TdafV"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Example of text alignment</h5>
+            <p>
+              You can align the text to left, right or center by adding a class
+              like
+              <span class="code">text-left, text-right, text-center </span> to
+              an element with text.
+            </p>
+            <div class="component-container-column">
+              <div>
+                <p class="text-left">Example of left aligned text</p>
+                <p class="text-right">Example of right aligned text</p>
+                <p class="text-center">Example of center aligned text</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/7m0FPknYMgkDhkr9vqD4"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h5>Other styles on text</h5>
+            <ul class="styled-list">
+              <li>
+                You can underline the text by adding a class
+                <span class="code">text-underline</span>
+              </li>
+              <li>
+                You can strike through the text by adding a class
+                <span class="code">text-strike</span>
+              </li>
+              <li>
+                You can change the text color to primary by adding a class
+                <span class="code">primary-text</span>
+              </li>
+              <li>
+                You can change the text color to secondary by adding a class
+                <span class="code">secondary-text</span>
+              </li>
+              <li>
+                You can change the text color to dark by adding a class
+                <span class="code">dark-text</span>
+              </li>
+              <li>
+                You can change the text color to gray by adding a class
+                <span class="code">inactive-text</span>
+              </li>
+              <li>
+                You can change the text color to red by adding a class
+                <span class="code">danger-text</span>
+              </li>
+              <li>
+                You can change the text color to green by adding a class
+                <span class="code">success-text</span>
+              </li>
+            </ul>
+            <div class="component-container-column">
+              <div>
+                <p class="text-underline">Example of underlined text</p>
+                <p class="text-strike">Example of striked through text</p>
+                <p class="primary-text">Example of primary text</p>
+                <p class="secondary-text">Example of secondary through text</p>
+                <p class="dark-text">Example of dark text</p>
+                <p class="inactive-text">Example of gray text</p>
+                <p class="danger-text">Example of red text</p>
+                <p class="success-text">Example of green text</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <iframe
+                class="code-frame"
+                src="https://carbon.now.sh/embed/tQ5WoJVVQjvj11xi0Mxy"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="gutter-vh-xl" />
+
+        <a href="#" class="btn btn-float"><i class="fas fa-arrow-up"></i></a>
+      </main>
+
+      <!-- footer section -->
+
+      <footer class="page-footer">
+        <div class="dark-bg padder-vh-lg flex-column align-middle light-text">
+          <p>Made by Shahbaz Khan</p>
+          <ul class="list-reset gutter-vh-lg">
+            <li class="list-inline">
+              <a
+                href="https://twitter.com/shahbazkhan_js"
+                target="_blank"
+                class="light-text"
+                ><i class="fab fa-twitter text-md-size"></i
+              ></a>
+            </li>
+            <li class="list-inline padder-hz-md">
+              <a
+                href="https://github.com/shahbaz4595/BleedBlue-CSS"
+                target="_blank"
+                class="light-text"
+                ><i class="fab fa-github text-md-size"></i
+              ></a>
+            </li>
+            <li class="list-inline">
+              <a
+                href="https://www.linkedin.com/in/shahbaz-khan4595/"
+                target="_blank"
+                class="light-text"
+                ><i class="fab fa-linkedin text-md-size"></i
+              ></a>
+            </li>
+          </ul>
+          <p>&copy; BleedBlue CSS</p>
+        </div>
+      </footer>
     </div>
 
     <script src="../components/js/bleedblue.js"></script>
     <script src="/bleedbluedocs/docs.js"></script>
-</body>
+  </body>
 </html>
