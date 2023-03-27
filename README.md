@@ -5,6 +5,9 @@ Live Link: [https://bleedblue.netlify.app/](https://bleedblue.netlify.app/)
 BleedBlue CSS is an open source UI component library created using HTML, CSS and Vanilla JavaScript made for building fast, responsive and attractive websites in minutes so that you spend more time on the logic and less on styling.
 You can simply copy the component you want to use and integrate it into your web application.
 
+### Tech Stack
+HTML5, CSS3
+
 ### Installation
 
 Installing BleedBlue CSS in your project is very easy. You just need to add the link tag as mentioned in the [installation guide](https://bleedblue-dev.netlify.app/#installation-guide) in the head section of your web page and you are good to go.
